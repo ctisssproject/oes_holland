@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>会员登录</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".email_box input").focus(function () {
+                $(".email_box input").css("background-image", "none");
+            });
+            $(".pas_box input").focus(function () {
+                $(".pas_box input").css("background-image", "none");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="title">
+        <img alt="" class="title_l" src="images/logo-full.png" />
+        <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+    </div>
+    <div class="login_box">
+        <div class="login_title">
+            <h1>会员登录</h1>
+        </div>
+        <div class="email_box">
+            <span class="icon-mail"></span>
+            <input type="text" />
+        </div>
+        <div class="pas_box">
+            <span class="icon-lock"></span>
+            <input type="text" />
+        </div>
+        <div class="login_buutton">
+            登录
+        </div>
+        <div class="more_box">
+            <h1>注册成为会员</h1>
+            <h2>忘记密码?</h2>
+        </div>
+    </div>
+</body>
+</html>

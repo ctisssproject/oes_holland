@@ -1,0 +1,10 @@
+(function(){
+	var hotwords="<strong>\u70ed\u95e8\u641c\u7d22\uff1a</strong><a href='http://list.jd.com/737-794-880-22205-0-0-0-0-0-0-1-1-1-1-1-72-2799-0.html' target='_blank'>\u5361\u8fea\u6d17\u8863\u673a</a><a href='http://list.jd.com/737-794-870-0-9419-0-0-0-0-0-1-1-1-1-1-72-4137-0.html' target='_blank'>\u53d8\u9891\u7a7a\u8c03</a><a href='http://list.jd.com/737-794-798-0-109147-0-0-0-0-0-1-1-1-1-1-72-4137-33.html' target='_blank'>\u667a\u80fd\u7535\u89c6</a><a href='http://list.jd.com/737-794-798-0-366619-0-0-0-0-0-1-1-1-1-1-72-4137-33.html' target='_blank'>4K\u7535\u89c6</a><a href='http://list.jd.com/737-738-745-0-0-0-0-0-0-0-1-1-1-1-1-72-4137-0.html' target='_blank'>\u5438\u5c18\u5668</a><a href='http://list.jd.com/737-752-881-0-0-0-0-0-0-0-1-1-1-1-1-72-4139-0.html' target='_blank'>\u7535\u538b\u529b\u9505</a>";
+	var keywords="\u5965\u7279\u6717";
+	$("#hotwords").html(hotwords);
+	$("#key").val(keywords).bind("focus",function(){
+		if (this.value==keywords){this.value="";this.style.color="#333"}
+	}).bind("blur",function(){
+		if (this.value==""){this.value=keywords;this.style.color="#999"}
+	});
+})();

@@ -1,0 +1,106 @@
+﻿<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #ededed; font-family:微软雅黑;font-size:12px; color:#333333">
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td style="width: 758px;padding-bottom: 120px">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #ffffff">
+                    <tr>
+                        <td>
+                        &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:25px;font-family:微软雅黑;">
+                        <TITLE/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="<URL/>" target="_blank" style="color:#3bb1e2; text-decoration:underline">进入课程学习</a>
+                        </td>
+                        <td style="width:100px;height:18px;;font-family:微软雅黑; background-color:#54c3f1; color:#ffffff; font-size:14px;text-align:center">
+                           <DATE/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #ffffff; margin-top:12px">
+                    <tr>
+                        <td style="height:86px; text-align:center; vertical-align:middle"><img src="<URL/>uploaddata/edm/<EDMID/>/logo.png" alt=""/></td>
+                    </tr>                    
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #ffffff; margin-top:12px">
+                    <tr>
+                        <td><img src="<URL/>uploaddata/edm/<EDMID/>/focus.jpg" alt=""/></td>
+                    </tr>                    
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: #ffffff; margin-top:12px">
+                    <tr>
+                        <td style="font-size:14px;font-family:微软雅黑;height:250px;padding:40px 35px 40px 35px; vertical-align:top; line-height:1.5">
+                        <CONTENT/>
+                        </td>
+                    </tr>                    
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top:15px">
+                    <tr>
+                        <td style="line-height:1.5;font-family:微软雅黑;background-image:url(<URL/>uploaddata/edm/<EDMID/>/bj.jpg); vertical-align:middle; padding-left:30px">
+                        邮件来自荷兰国家旅游会议促进局<br/>中国北京朝阳区光华东里8号院中海广场南楼1603室<br />
+                        版权2013，保留所有权利、隐私政策和不承诺声明
+                        </td>
+                        <td style="width:87px; text-align:right"><img src="<URL/>uploaddata/edm/<EDMID/>/weixin.png" alt=""/></td>
+                        <td style="width:87px; text-align:right"><a href="http://e.weibo.com/nbtc"><img src="<URL/>uploaddata/edm/<EDMID/>/weibo.png" style="border:0px" alt=""/></a></td>
+                    </tr>                    
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color:#ffffff; margin-top:15px">
+                    <tr>
+                        <td style="padding:23px; font-size:16px;font-family:微软雅黑;">
+                            积分换好礼
+                        </td>                       
+                    </tr>   
+                    <tr>
+                        <td><a href="<URL/>sub/student/prize.php" target="_blank" title="荷兰国家航空公司"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/prize.jpg" alt=""/></a></td>                       
+                    </tr> 
+                    <tr>
+                        <td style="padding-top:12px; padding-bottom:40px">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                <td style="vertical-align:top; text-align:center; line-height:1.5; width:226px;font-family:微软雅黑;" >
+                                双肩背包
+                                </td>
+                                <td style="vertical-align:top; text-align:center;line-height:1.5; width:139px;font-family:微软雅黑;">
+                                礼品台历 
+                                </td>
+                                <td style="vertical-align:top; text-align:center;line-height:1.5; width:207px;font-family:微软雅黑;">
+                                礼品围巾
+                                </td>
+                                <td style="vertical-align:top;text-align:center; line-height:1.5;font-family:微软雅黑;">
+                                摆桌名画
+                                </td>
+                                </tr>
+                            </table>
+                        </td>                       
+                    </tr>                  
+                </table>
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color:#ffffff; margin-top:15px">
+                    <tr>
+                        <td style="padding:23px; font-size:16px;font-family:微软雅黑;">
+                            合作伙伴
+                        </td>                       
+                    </tr>  
+                    <tr style="height:84px; vertical-align:top;font-family:微软雅黑;">
+                        <td style="text-align:left"><img style="margin-left:23px" src="<URL/>uploaddata/edm/<EDMID/>/line.jpg" alt=""/><br />
+                        <a href="http://www.klm.com/" target="_blank" title="荷兰国家航空公司"><img style="margin-left:32px; border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter1.jpg" alt="荷兰国家航空公司"/></a><a href="http://www.iamsterdam.com/" target="_blank" title="阿姆斯特丹"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter2.jpg" alt="阿姆斯特丹"/></a><a href="http://www.schiphol.nl/" target="_blank" title="阿姆斯特丹史基浦机场"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter3.jpg" alt="阿姆斯特丹史基浦机场"/></a><a href="http://www.bataviastad.nl/en" target="_blank" title="巴达维亚城市时尚奥特莱斯"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter4.jpg" alt="巴达维亚城市时尚奥特莱斯"/></a><a href="http://www.gassan.com/" target="_blank" title="迦山钻石"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter5.jpg" alt="迦山钻石"/></a><a href="http://www.madurodam.nl/en/" target="_blank" title="马德罗丹"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter6.jpg" alt="马德罗丹"/></a><a href="http://cn.holland.com/" target="_blank" title="荷兰国家旅游会议促进局"><img style="border:0px" src="<URL/>uploaddata/edm/<EDMID/>/parter7.jpg" alt="荷兰国家旅游会议促进局"/></a></td>                       
+                    </tr>  
+                </table>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>

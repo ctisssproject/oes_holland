@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'holland-travel-expert';
+	src:url('../fonts/holland-travel-expert.eot?mlj3ia');
+	src:url('../fonts/holland-travel-expert.eot?#iefixmlj3ia') format('embedded-opentype'),
+		url('../fonts/holland-travel-expert.woff?mlj3ia') format('woff'),
+		url('../fonts/holland-travel-expert.ttf?mlj3ia') format('truetype'),
+		url('../fonts/holland-travel-expert.svg?mlj3ia#holland-travel-expert') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'holland-travel-expert';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alert:before {
+	content: "\e607";
+}
+
+.icon-back:before {
+	content: "\e608";
+}
+
+.icon-doc:before {
+	content: "\e609";
+}
+
+.icon-done:before {
+	content: "\e60a";
+}
+
+.icon-gift:before {
+	content: "\e60b";
+}
+
+.icon-idcard:before {
+	content: "\e60c";
+}
+
+.icon-logout:before {
+	content: "\e60d";
+}
+
+.icon-master:before {
+	content: "\e60e";
+}
+
+.icon-menu:before {
+	content: "\e60f";
+}
+
+.icon-minus:before {
+	content: "\e610";
+}
+
+.icon-none:before {
+	content: "\e611";
+}
+
+.icon-photo:before {
+	content: "\e612";
+}
+
+.icon-plus:before {
+	content: "\e613";
+}
+
+.icon-point:before {
+	content: "\e614";
+}
+
+.icon-radio:before {
+	content: "\e615";
+}
+
+.icon-radiocheck:before {
+	content: "\e616";
+}
+
+.icon-share:before {
+	content: "\e617";
+}
+
+.icon-top:before {
+	content: "\e618";
+}
+
+.icon-user:before {
+	content: "\e619";
+}
+
+.icon-check:before {
+	content: "\e600";
+}
+
+.icon-cross:before {
+	content: "\e601";
+}
+
+.icon-lock:before {
+	content: "\e602";
+}
+
+.icon-mail:before {
+	content: "\e603";
+}
+
+.icon-news:before {
+	content: "\e604";
+}
+
+.icon-next:before {
+	content: "\e605";
+}
+
+.icon-notepad:before {
+	content: "\e606";
+}
+

@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>荷兰旅游专家-答题</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="Stylesheet" media="screen and (max-width:374px)" href="css/holland_5.css" />
+    <link type="text/css" rel="Stylesheet" media="screen and (min-width:375px)" href="css/holland_6.css" />
+    <link type="text/css" rel="Stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        function set_w() {
+            var win_w = $(window).width(),
+                win_h = $(window).height(),
+                title_h = $(".title").height(),
+                w = win_w * 0.94,
+                div_w = w - 84,
+                h = win_h - title_h - 80;
+
+            $(".question_option h2").css("width", div_w);
+            $(".quiz_box").css("min-height", h);
+            $(".quiz_box").find(".question_info").eq(0).css("display", "block");
+        }
+        $(function () {
+            set_w();
+        });
+        $(window).on('orientationchange', function () {
+            set_w();
+        });
+        function click_opation(a) {
+            $(".question_option span").removeClass("icon-radiocheck");
+            $(".question_option span").addClass("icon-radio");
+            $(a).find("span").removeClass("icon-radio");
+            $(a).find("span").addClass("icon-radiocheck");
+            $(a).find("input").prop("checked", true);
+            //var v = $('input[name=radio]:checked').val();//获得选中的radio的值
+            //alert(v);
+        }
+        function click_checkbox(a) {
+            var cl = $(a).find("span").attr("class");
+            if (cl == "icon-radio") {
+                $(a).find("span").removeClass("icon-radio");
+                $(a).find("span").addClass("icon-radiocheck");
+                $(a).find("input").prop("checked", true);
+            } else {
+                $(a).find("span").removeClass("icon-radiocheck");
+                $(a).find("span").addClass("icon-radio");
+                $(a).find("input").prop("checked", false);
+            }
+        }
+        i = 0;
+        function next_question() {
+            var len = $(".question_info").length - 1;
+            if (i < len) {
+                i++;
+                $(".quiz_box").find(".question_info").css("display", "none");
+                $(".quiz_box").find(".question_info").eq(i).css("display", "block");
+            }
+        }
+        function last_question() {
+            if (i > 0) {
+                i--;
+                $(".quiz_box").find(".question_info").css("display", "none");
+                $(".quiz_box").find(".question_info").eq(i).css("display", "block");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="page_box">
+        <div class="title">
+            <img alt="" class="title_l" src="images/logo-full.png" />
+            <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+        </div>
+        <div class="quiz_title">
+            <div class="title_icon">
+                <span class="icon-back"></span>
+                <h1>测试中...</h1>
+            </div>
+            <h2>测试剩余时间: 28分56秒</h2>
+        </div>
+        <div class="quiz_box">
+            <div class="question_num">
+                问题2
+            </div>
+            
+            <div class="row m_b_30">
+                <div class="question_info">
+                    <h1>1.沃丹伦与马肯是两颗散落在艾瑟尔湖畔的珍珠，在这里，可以看到典型的荷兰渔村生活场景。以下哪些是可以在这两个隔海相望的北海渔村里看到的景象：</h1>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="A" /></span>
+                        <h2>A.港口附近的餐厅和街头小摊都可以找到纯正又美味的海鲜</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="B" /></span>
+                        <h2>B.穿着木鞋和黑红相间的传统服饰，带着白色蕾丝的俏皮小帽子的荷兰人</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="C" /></span>
+                        <h2>C.可以停工身着荷兰传统民族服装拍照的照相馆</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="D" /></span>
+                        <h2>D.以上都是</h2>
+                    </div>
+                </div>
+
+                <div class="question_info">
+                    <h1>2.沃丹伦与马肯是两颗散落在艾瑟尔湖畔的珍珠，在这里，可以看到典型的荷兰渔村生活场景。以下哪些是可以在这两个隔海相望的北海渔村里看到的景象：</h1>
+                    <div class="row question_option" onclick="click_checkbox(this)">
+                        <span class="icon-radio"><input type="checkbox" name="radio" value="A" /></span>
+                        <h2>A.港口附近的餐厅和街头小摊都可以找到纯正又美味的海鲜</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_checkbox(this)">
+                        <span class="icon-radio"><input type="checkbox" name="radio" value="B" /></span>
+                        <h2>B.穿着木鞋和黑红相间的传统服饰，带着白色蕾丝的俏皮小帽子的荷兰人</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_checkbox(this)">
+                        <span class="icon-radio"><input type="checkbox" name="radio" value="C" /></span>
+                        <h2>C.可以停工身着荷兰传统民族服装拍照的照相馆</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_checkbox(this)">
+                        <span class="icon-radio"><input type="checkbox" name="radio" value="D" /></span>
+                        <h2>D.以上都是</h2>
+                    </div>
+                </div>
+
+
+                <div class="question_info">
+                    <h1>3.沃丹伦与马肯是两颗散落在艾瑟尔湖畔的珍珠，在这里，可以看到典型的荷兰渔村生活场景。以下哪些是可以在这两个隔海相望的北海渔村里看到的景象：</h1>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="A" /></span>
+                        <h2>A.港口附近的餐厅和街头小摊都可以找到纯正又美味的海鲜</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="B" /></span>
+                        <h2>B.穿着木鞋和黑红相间的传统服饰，带着白色蕾丝的俏皮小帽子的荷兰人</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="C" /></span>
+                        <h2>C.可以停工身着荷兰传统民族服装拍照的照相馆</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="D" /></span>
+                        <h2>D.以上都是</h2>
+                    </div>
+                </div>
+
+
+                <div class="question_info">
+                    <h1>4.沃丹伦与马肯是两颗散落在艾瑟尔湖畔的珍珠，在这里，可以看到典型的荷兰渔村生活场景。以下哪些是可以在这两个隔海相望的北海渔村里看到的景象：</h1>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="A" /></span>
+                        <h2>A.港口附近的餐厅和街头小摊都可以找到纯正又美味的海鲜</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="B" /></span>
+                        <h2>B.穿着木鞋和黑红相间的传统服饰，带着白色蕾丝的俏皮小帽子的荷兰人</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="C" /></span>
+                        <h2>C.可以停工身着荷兰传统民族服装拍照的照相馆</h2>
+                    </div>
+                    <div class="row question_option" onclick="click_opation(this)">
+                        <span class="icon-radio"><input type="radio" name="radio" value="D" /></span>
+                        <h2>D.以上都是</h2>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+            <div class="row pos_bottom">
+                <div class="next_but b_bg" onclick="next_question()">
+                    下一题
+                </div>
+                <div class="last_but b_bg" onclick="last_question()">
+                    上一题
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1555 @@
+﻿body
+{
+	font-family: 微软雅黑;
+}
+div
+{
+	overflow: hidden;
+}
+/*-----------------个人中心 头部 标签-------------------*/
+.main .my .title
+{
+	background-color: #FF7000;
+	width: 124px;
+	height: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(   '../images/ucenter_title.png' );
+}
+.main .my .title_modifypassword
+{
+	background-image: url(   '../images/modifypassword_title.png' );
+}
+.main .my .title_modifyinfo
+{
+	background-image: url(   '../images/modifyinfo_title.png' );
+}
+.main .my .title_modifyphoto
+{
+	background-image: url(   '../images/modifyphoto_title.png' );
+}
+.main .my .title_chapter
+{
+	background-image: url(   '../images/chapter_title.png' );
+}
+.main .my .title_news
+{
+	background-image: url(   '../../../images/news_title.png' );
+}
+.main .my .title_prize
+{
+	background-image: url(   '../images/prize_title.png' );
+}
+.main .my .title_info
+{
+	background-image: url(   '../images/info_title.png' );
+}
+.main .my .title_credential
+{
+	background-image: url(   '../images/credential_title.png' );
+}
+.main .my .title_record
+{
+	background-image: url(   '../images/record_title.png' );
+}
+.main .my .title_contact
+{
+	background-image: url(   '../../../images/contact_title.png' );
+}
+/*-----------------个人中心 头部 注册人数信心-------------------*/
+.main .my .reginfo
+{
+	height: 180px;
+	padding-right: 7px;
+}
+.main .my .reginfo div.bj
+{
+	width: 100%;
+	height: 180px;
+	background-image: url(   '../../../images/bj.jpg' );
+}
+.main .my .reginfo div.bj div
+{
+	width: 100%;
+	margin: 16px 0px 0px 21px;
+	line-height: 1.6;
+	color: #7D7D7D;
+}
+.main .my .reginfo div.bj div span
+{
+	color: #54C3F1;
+}
+.main .my .reginfo div.bj .down
+{
+	cursor: pointer;
+	width: 75px;
+	height: 24px;
+	background-color: #858585;
+	margin-top: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(   '../images/title_left_01.png' );
+}
+.main .my .reginfo div.bj .down:hover
+{
+	background-color: #585757;
+}
+/*-----------------个人中心 顶端黄色线和白色三角-------------------*/
+.main .my .title_right
+{
+	border-bottom: 1px solid #FFFFFF;
+	background-color: #ECE9E0;
+	background-image: url(   '../images/title_right_bj.png' );
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.main .my .right_other
+{
+	border-bottom: 1px solid #F3F3F1;
+	background-color: #ECE9E0;
+}
+.main .my .title_right .top
+{
+	background-color: #FF7000;
+	width: 100%;
+	height: 5px;
+}
+.main .my .title_right .top div
+{
+	float: right;
+	width: 112px;
+	height: 5px;
+	background-image: url(   '../images/title_right_top_01.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.main .my .title_right .down
+{
+	width: 100%;
+}
+/*-----------------个人中心，欢迎话语前的三角-------------------*/
+.main .my .title_right .down .jiao
+{
+	float: left;
+	width: 32px;
+	height: 44px;
+	background-image: url(   '../images/title_right_down_01.png' );
+	background-position: left 11px;
+	background-repeat: no-repeat;
+}
+/*-----------------个人中心，欢迎话语-------------------*/
+.main .my .title_right .down .text
+{
+	float: left;
+	height: 29px;
+	padding-top: 14px;
+}
+.main .my .title_right .down .botton
+{
+	float: left;
+	padding: 3px 6px 3px 6px;
+	margin-top: 11px;
+	margin-left: 10px;
+	cursor: pointer;
+	background-color: #54c3f1;
+	color: #FFFFFF;
+}
+.main .my .title_right .down .botton:hover
+{
+	background-color: #0F92CA;
+}
+/*-----------------个人中心，修改密码和退出按钮和返回个人中心按钮-------------------*/
+.main .my .title_right .down .modify_password
+{
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	width: 111px;
+	background-color: #ffffff;
+	border-right: 1px solid #F3F3F1;
+	background-image: url(   '../images/title_right_modifypassword_off.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .title_right .down .modify_password:hover
+{
+	background-image: url(   '../images/title_right_modifypassword_on.png' );
+}
+.main .my .title_right .down .return_ucenter
+{
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	width: 111px;
+	background-color: #ffffff;
+	border-right: 1px solid #F3F3F1;
+	background-image: url(   '../images/title_right_ucenter_off.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .title_right .down .return_ucenter:hover
+{
+	background-image: url(   '../images/title_right_ucenter_on.png' );
+}
+.main .my .title_right .down .exit
+{
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	width: 111px;
+	background-color: #ffffff;
+	background-image: url(   '../images/title_right_exit_off.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .title_right .down .exit:hover
+{
+	background-image: url(   '../images/title_right_exit_on.png' );
+}
+.main .my .title_right .down .reg
+{
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	width: 111px;
+	background-color: #ffffff;
+	background-image: url(   '../images/title_right_reg_off.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .title_right .down .reg:hover
+{
+	background-image: url(   '../images/title_right_reg_on.png' );
+}
+/*-----------------个人中心，顶部 头像，积分，徽章，专家图标-------------------*/
+.main .my .icon
+{
+	background-color: #ECE9E0;
+	background-image: url(   '../images/title_right_bj_down.png' );
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._1
+{
+	cursor: pointer;
+	background-color: #FF7000;
+	margin-top: 63px;
+	width: 31px;
+	height: 31px;
+	float: left;
+	background-image: url(   '../images/icon_text_01.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._1:hover
+{
+	background-color: #D35400;
+}
+.main .my .icon ._2
+{
+	background-color: #ffffff;
+	margin-top: 17px;
+	width: 77px;
+	height: 77px;
+	float: left;
+}
+.main .my .icon ._2 img
+{
+	margin-left: 6px;
+	margin-top: 6px;
+	width: 65px;
+	height: 65px;
+}
+.main .my .icon ._3
+{
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 146px;
+	height: 146px;
+	float: left;
+}
+.main .my .icon ._3 .top
+{
+	width: 80px;
+	height: 33px;
+	margin-left: 33px;
+}
+.main .my .icon ._3 .top .text
+{
+	background-color: #FF7000;
+	width: 100%;
+	height: 26px;
+	background-image: url(   '../images/icon_text_03_1.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._3 .top .jiao
+{
+	width: 100%;
+	height: 7px;
+	background-image: url(   '../images/jiao01.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._3 .center
+{
+	width: 100%;
+	margin-top:8px;
+	height: 87px;
+	text-align: center;
+	cursor: pointer;
+	color: #FF7000;
+}
+.main .my .icon ._3 .center img
+{
+	margin: 16px 2px 0px 2px;
+}
+.main .my .icon ._3 .center:hover
+{
+}
+.main .my .icon ._3 .down
+{
+	cursor: pointer;
+	width: 80px;
+	height: 26px;
+	margin-left: 33px;
+	background-color: #54C4F2;
+	background-image: url(   '../images/icon_text_03_2.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._3 .down:hover
+{
+	background-color: #0F92CA;
+}
+.main .my .icon ._4
+{
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 146px;
+	height: 146px;
+	float: left;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._4 .top
+{
+	margin-top: 43px;
+	width: 100%;
+	height: 30px;
+	background-image: url(   '../images/icon_text_04.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._4 .text
+{
+	margin-top: 5px;
+	width: 100%;
+	height: 37px;
+	font-size: 14px;
+	text-align: center;
+	color: #FF7000;
+}
+.main .my .icon ._4 .text span
+{
+	font-family: 宋体;
+}
+.main .my .icon ._4_ok
+{
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 146px;
+	height: 146px;
+	float: left;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.main .my .icon ._4_ok .text
+{
+	margin-top: 59px;
+}
+/*-----------------20个进度条 从0-100-------------------*/
+.main .my .icon .__0
+{
+	background-image: url(   '../images/icon_100_0.png' );
+}
+.main .my .icon .__5
+{
+	background-image: url(   '../images/icon_100_5.png' );
+}
+.main .my .icon .__10
+{
+	background-image: url(   '../images/icon_100_10.png' );
+}
+.main .my .icon .__15
+{
+	background-image: url(   '../images/icon_100_15.png' );
+}
+.main .my .icon .__20
+{
+	background-image: url(   '../images/icon_100_20.png' );
+}
+.main .my .icon .__25
+{
+	background-image: url(   '../images/icon_100_25.png' );
+}
+.main .my .icon .__30
+{
+	background-image: url(   '../images/icon_100_30.png' );
+}
+.main .my .icon .__35
+{
+	background-image: url(   '../images/icon_100_35.png' );
+}
+.main .my .icon .__40
+{
+	background-image: url(   '../images/icon_100_40.png' );
+}
+.main .my .icon .__45
+{
+	background-image: url(   '../images/icon_100_45.png' );
+}
+.main .my .icon .__50
+{
+	background-image: url(   '../images/icon_100_50.png' );
+}
+.main .my .icon .__55
+{
+	background-image: url(   '../images/icon_100_55.png' );
+}
+.main .my .icon .__60
+{
+	background-image: url(   '../images/icon_100_60.png' );
+}
+.main .my .icon .__65
+{
+	background-image: url(   '../images/icon_100_65.png' );
+}
+.main .my .icon .__70
+{
+	background-image: url(   '../images/icon_100_70.png' );
+}
+.main .my .icon .__75
+{
+	background-image: url(   '../images/icon_100_75.png' );
+}
+.main .my .icon .__80
+{
+	background-image: url(   '../images/icon_100_80.png' );
+}
+.main .my .icon .__85
+{
+	background-image: url(   '../images/icon_100_85.png' );
+}
+.main .my .icon .__90
+{
+	background-image: url(   '../images/icon_100_90.png' );
+}
+.main .my .icon .__95
+{
+	background-image: url(   '../images/icon_100_95.png' );
+}
+.main .my .icon .__100
+{
+	background-image: url(   '../images/icon_100_100.png' );
+}
+/*---------------*/
+.main .my .icon ._5
+{
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 146px;
+	height: 146px;
+	overflow: hidden;
+}
+.main .my .icon ._5mouse
+{
+	width: 265px;
+	height: 146px;
+	margin-left: 10px;
+	margin-top: -146px;
+	position: absolute;
+	z-index: 101;
+	background-image: url(   '../images/mouse_over.png' );
+}
+.main .my .icon ._8
+{
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 110px;
+	height: 146px;
+	float: left;
+}
+.main .my .icon ._8 .down
+{
+	background-color: #54c3f1;
+	width:110px;
+	height:68px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image: url(   '../images/ucenter_icon_8_down.png' );
+	cursor:pointer;
+	margin-top:10px;
+}
+.main .my .icon ._8 .down:hover
+{
+	background-color: #0F92CA;
+}
+.main .my .icon ._8 .top
+{
+	background-color: #54c3f1;
+	width:110px;
+	height:68px;
+	
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image: url(   '../images/ucenter_icon_8_top.png' );
+	cursor:pointer;
+}
+.main .my .icon ._8 .top:hover
+{
+	background-color: #0F92CA;
+}
+.main .my .icon .add
+{
+	margin-top: 0px;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	display: none;
+	padding-bottom: 10px;
+}
+.main .my .icon .big
+{
+	width: 265px;
+}
+.main .my .icon ._5 .top
+{
+	width: 80px;
+	height: 33px;
+}
+.main .my .icon ._5 .top .text
+{
+	background-color: #FF7000;
+	width: 100%;
+	height: 26px;
+	background-image: url(   '../images/icon_text_05.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._5 .top .jiao
+{
+	width: 100%;
+	height: 7px;
+	background-image: url(   '../images/jiao01.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._5 .top .down
+{
+	width: 100%;
+}
+.main .my .icon ._5 .down div
+{
+	width: 100px;
+	height: 30px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 20px;
+}
+.main .my .icon .add .down div
+{
+	margin-top: 0px;
+	margin-bottom: 16px;
+}
+.main .my .icon ._5 .down .icon
+{
+	width: 42px;
+	height: 30px;
+	background-color: #EBE9DF;
+	float: left;
+	margin: 0px;
+	text-align: inherit;
+}
+.main .my .icon ._5 .down .icon div
+{
+	width: 42px;
+	height: 30px;
+	margin: 0px;
+	position: absolute;
+}
+.main .my .icon ._5 .down .icon .text
+{
+	margin-top: 9px;
+	font-size: 10px;
+	color: #7D7D7D;
+	z-index: 100;
+}
+.main .my .icon ._5 .down .icon .textok
+{
+	margin-top: 9px;
+	font-size: 10px;
+	color: White;
+	z-index: 100;
+}
+.main .my .icon ._5 .down .icon .zhezhao
+{
+	background-image: url(   '../images/icon_zhezhao.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+	z-index: 99;
+}
+.main .my .icon ._5 .down .icon .bj
+{
+	background-color: #CFCDC4;
+	z-index: 98;
+}
+.main .my .icon ._5 .down .icon .bjok
+{
+	background-color: #FF7000;
+	z-index: 98;
+}
+.main .my .icon ._5 .down .name
+{
+	width: 48px;
+	height: 30px;
+	float: left;
+	margin: 0px;
+	margin-left: 10px;
+	color: #7D7D7D;
+	padding: 0px;
+}
+.main .my .icon ._6
+{
+	background-color: #FF7000;
+	width: 108px;
+	height: 26px;
+	cursor: pointer;
+	float: left;
+	background-image: url(   '../images/icon_text_06.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .my .icon ._6:hover
+{
+	background-color: #D35400;
+}
+.main .my .icon ._7
+{
+	float: left;
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-top: 17px;
+	width: 265px;
+	height: 146px;
+	cursor: pointer;
+}
+.main .my .icon ._7 .title
+{
+	background-image: url(   '../images/icon_text_07_title.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 36px;
+	background-color: #FF7000;
+}
+.main .my .icon ._7 .photo
+{
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(   '../images/icon_text_07_photo.jpg' );
+	height: 62px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.main .my .icon ._7 .text
+{
+	color: #858585;
+}
+.main .my .icon ._7 .down
+{
+	color: #858585;
+	font-family: 宋体;
+	float: right;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-image: url(   '../images/icon_text_07_down.png' );
+	margin-top: 5px;
+	padding-right: 20px;
+	margin-right: 10px;
+}
+/*---------------------课程样式-----------------------------*/
+.main .course
+{
+	margin-top: 8px;
+}
+.main .course .left .top
+{
+	height: 17px;
+	width: 100%;
+	background-color: White;
+}
+.main .course .left .title
+{
+	width: 100%;
+	height: 37px;
+	background-image: url(   '../images/course_left_title.png' );
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.main .course .left .text
+{
+	color: #7D7D7D;
+	line-height: 2;
+	margin-left: 22px;
+	margin-top: 10px;
+}
+.main .course .left
+{
+	width: 117px;
+	background-image: url(   '../../../images/bj.jpg' );
+}
+.main .course .right
+{
+	padding: 0px;
+}
+.main .course .right .icon
+{
+	float: left;
+	width: 307px;
+	margin-right: 14px;
+	margin-top: 14px;
+	height: 216px;
+	background-color: #ebe9df;
+	cursor: pointer;
+	overflow: hidden;
+}
+.main .course .right .icon .chapter_number
+{
+	float: left;
+	height: 43px;
+	width: 50px;
+	padding-top: 17px;
+	padding-left: 20px;
+	margin-right: 4px;
+	text-align: left;
+}
+.main .course .right .icon .chapter_title
+{
+	color: #000000;
+	font-size: 14px;
+	float: left;
+	width: 210px;
+	text-align: left;
+	padding-top: 14px;
+	height: 46px;
+}
+.main .course .right .icon .chapter_number img
+{
+	margin-right: 4px;
+}
+.main .course .right .icon .chapter_icon
+{
+	float: left;
+	width: 122px;
+	height: 122px;
+	margin-left: 75px;
+}
+.main .course .right .icon .chapter_icon img
+{
+	height: 122px;
+	width: 122px;
+}
+.main .course .right .icon .chapter_info
+{
+	float: left;
+	width: 92px;
+	height: 122px;
+}
+.main .course .right .icon .chapter_info_icon
+{
+	float: left;
+	width: 87px;
+	padding-top: 4px;
+	text-align: right;
+	padding-right: 5px;
+	height: 86px;
+	background-position: right top;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+.main .course .right .icon .chapter_info_text
+{
+	float: left;
+	width: 80px;
+	height: 90px;
+	text-align: left;
+	padding-left: 12px;
+}
+.main .course .right .icon .chapter_info .start
+{
+	background-image: url(   '../images/chapter_icon_start.png' );
+}
+.main .course .right .icon .chapter_info .goon
+{
+	background-image: url(   '../images/chapter_icon_goon.png' );
+}
+.main .course .right .icon .chapter_info .fuxi
+{
+	background-image: url(   '../images/chapter_icon_fuxi.png' );
+}
+.main .course .right .icon .chapter_roll
+{
+	margin-top: 10px;
+	float: left;
+	width: 307px;
+	height: 4px;
+	background-color: #858585;
+}
+.main .course .right .icon .chapter_roll .chapter_center
+{
+	float: left;
+	height: 4px;
+	width: 0px;
+}
+.main .course .right .icon .chapter_roll .fuxi_c
+{
+	background-color: #ff6f00;
+}
+.main .course .right .icon .chapter_roll .goon_c
+{
+	background-color: #54c3f1;
+}
+.main .course .right .icon:hover
+{
+	background-color: #cfcdc4;
+}
+.main .course .right .none
+{
+	float: left;
+	width: 307px;
+	margin-right: 14px;
+	margin-top: 14px;
+	height: 216px;
+	background-color: #ebe9df;
+	overflow: hidden;
+	background-image: url(   '../images/chapter_icon_none.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .course .right .noneright
+{
+	margin-right: 0px;
+}
+/*------修改头像页样式------*/
+.main .modify_photo_old
+{
+	height: 120px;
+}
+.main .modify_photo_old div
+{
+	margin-top: 10px;
+	padding: 15px;
+	border: 1px solid #DBDBD5;
+	width: 65px;
+}
+.main .modify_photo_old img
+{
+	width: 65px;
+	height: 65px;
+}
+/*------培训课程样式------*/
+.main .chapter
+{
+	margin-top: 40px;
+}
+.main .chapter .left
+{
+	width: 180px;
+}
+.main .chapter .right
+{
+	padding-left: 20px;
+}
+.main .chapter .right div
+{
+	width: 100%;
+	overflow: hidden;
+}
+.main .chapter .right .title
+{
+	float: left;
+	width: 178px;
+	height: 260px;
+	padding-top: 35px;
+	background-color: #FF7000;
+	background-image: url( '../images/chapter_title_bj.png' );
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.main .chapter .right .title .text
+{
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	width: 130px;
+	overflow: hidden;
+	color: #FFFFFF;
+	margin-left: 18px;
+}
+.main .chapter .right .title .icon
+{
+	float: left;
+	width: 27px;
+	height: 27px;
+	background-color: #FFFFFF;
+}
+.main .chapter .right .title .icon img
+{
+	margin-top: 7px;
+	margin-right: 1px;
+}
+.main .chapter .right .img
+{
+	float: right;
+	width: 550px;
+	height: 295px;
+	background-color: #ebe9df;
+}
+.main .chapter .right .img img
+{
+	width: 550px;
+	height: 295px;
+}
+.main .chapter .right .content
+{
+	margin-top: 17px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	overflow: hidden;
+	vertical-align: inherit;
+	text-align: left;
+}
+.main .chapter .right .content td
+{
+	vertical-align: top;
+}
+.main .chapter .right .content td p
+{
+	vertical-align: inherit;
+}
+.main .chapter .right .section
+{
+	width: 640px;
+}
+.main .chapter .right .exam_ok
+{
+	background-color: #54c3f1;
+	height: 66px;
+	width: 640px;
+}
+.main .chapter .right .exam_ok .icon
+{
+	float: left;
+	width: 74px;
+	background-color: #1b9ed4;
+	background-image: url( '../images/chapter_exam_icon_ok.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+.main .chapter .right .exam_ok .jiao
+{
+	float: left;
+	width: 6px;
+	background-image: url( '../images/chapter_jiao_1.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+.main .chapter .right .exam_ok .text
+{
+	float: left;
+	width: 560px;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-top: 25px;
+}
+.main .chapter .right .exam_no
+{
+	background-color: #54c3f1;
+	height: 66px;
+	width: 640px;
+}
+.main .chapter .right .exam_no .icon
+{
+	float: left;
+	width: 80px;
+	background-color: #1b9ed4;
+	background-image: url( '../images/chapter_exam_icon_text.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 66px;
+	cursor: pointer;
+}
+.main .chapter .right .exam_no .icon:hover
+{
+	background-color: #0F92CA;
+}
+.main .chapter .right .exam_no .jiao2
+{
+	float: right;
+	background-image: url( '../images/chapter_jiao_2.png' );
+	background-position: right center;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+.main .chapter .right .exam_no .text
+{
+	float: left;
+	width: 293px;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-top: 17px;
+	padding-left: 20px;
+}
+.main .chapter .right .exam_no .icon2
+{
+	float: left;
+	width: 74px;
+	background-color: #1b9ed4;
+	background-image: url( '../images/chapter_exam_icon_no.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+.main .chapter .right .exam_no .jiao
+{
+	float: left;
+	width: 6px;
+	background-image: url( '../images/chapter_jiao_1.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+.main .chapter .right .exam_no .text2
+{
+	width: 110px;
+	float: left;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-top: 17px;
+	margin-left: 20px;
+}
+.main .chapter .right .share
+{
+	margin-top: 70px;
+}
+.main .chapter .right .share div
+{
+	height: 26px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.main .chapter .right .share .button
+{
+	float: left;
+	width: 56px;
+	background-color: #FF7000;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding-top: 4px;
+	height: 22px;
+	margin-right: 13px;
+}
+.main .chapter .right .share .button:hover
+{
+	background-color: #D35400;
+}
+.main .chapter .right .share .sina
+{
+	float: left;
+	width: 27px;
+	background-color: #858585;
+	background-image: url( '../images/share_sina.png' );
+	margin-right: 13px;
+}
+.main .chapter .right .share .sina:hover
+{
+	background-color: #54c3f1;
+}
+.main .chapter .right .share .qqweibo
+{
+	float: left;
+	width: 27px;
+	background-color: #858585;
+	margin-right: 13px;
+	background-image: url( '../images/share_qqweibo.png' );
+}
+.main .chapter .right .share .qqweibo:hover
+{
+	background-color: #54c3f1;
+}
+.main .chapter .right .share .qqzone
+{
+	float: left;
+	width: 27px;
+	background-color: #858585;
+	background-image: url( '../images/share_qqzone.png' );
+	margin-right: 13px;
+}
+.main .chapter .right .share .qqzone:hover
+{
+	background-color: #54c3f1;
+}
+.main .chapter .right .share .next
+{
+	float: right;
+	width: 96px;
+	margin-left: 13px;
+}
+.main .chapter .right .share .next ._1
+{
+	float: right;
+	width: 26px;
+	height: 26px;
+	background-color: #858585;
+	background-image: url( '../images/share_next_jiao.png' );
+}
+.main .chapter .right .share .next ._1:hover
+{
+	background-color: #54c3f1;
+}
+.main .chapter .right .share .next ._2
+{
+	float: right;
+	width: 70px;
+	height: 26px;
+	background-color: #ebe9df;
+	background-image: url( '../images/share_next_text.png' );
+}
+.main .chapter .right .share .next ._2:hover
+{
+	background-color: #dcdad2;
+}
+.main .chapter .right .share .prev
+{
+	float: right;
+	width: 96px;
+	margin-left: 13px;
+}
+.main .chapter .right .share .prev ._1
+{
+	float: left;
+	width: 26px;
+	height: 26px;
+	background-color: #858585;
+	background-image: url( '../images/share_prev_jiao.png' );
+}
+.main .chapter .right .share .prev ._1:hover
+{
+	background-color: #54c3f1;
+}
+.main .chapter .right .share .prev ._2
+{
+	float: left;
+	width: 70px;
+	height: 26px;
+	background-color: #ebe9df;
+	background-image: url( '../images/share_prev_text.png' );
+}
+.main .chapter .right .share .prev ._2:hover
+{
+	background-color: #dcdad2;
+}
+.main .chapter .right #exam
+{
+}
+/*------答题样式------*/
+.exam_title .text
+{
+	float: left;
+	background-color: #54c3f1;
+	font-size: 14px;
+	color: #ffffff;
+	height: 28px;
+	width: 90px;
+	padding-top: 10px;
+	padding-left: 21px;
+}
+.exam_title #time
+{
+	float: right;
+	font-size: 14px;
+	color: #858585;
+	padding-top: 10px;
+}
+#subject
+{
+	width: 461px;
+	border: 1px solid #54c3f1;
+	padding: 30px 60px 20px 117px;
+	color: #858585;
+}
+#subject .text
+{
+	width: 56px;
+	height: 22px;
+	font-size: 14px;
+	color: #ffffff;
+	padding-top: 4px;
+	background-color: #54c3f1;
+}
+#subject .title
+{
+	margin-top: 20px;
+}
+#subject .item
+{
+	margin-top: 5px;
+}
+#subject .item div
+{
+	margin-top: 5px;
+}
+#subject .item .option div
+{
+	margin-right: 10px;
+	float: left;
+}
+#subject .item .option .text2
+{
+	margin-right: 0px;
+	width: 400px;
+}
+#subject .button div
+{
+	float: left;
+	margin-right: 7px;
+	margin-top: 20px;
+	width: 56px;
+	height: 22px;
+	background-color: #54c3f1;
+	color: #ffffff;
+	padding-top: 4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#subject .button div:hover
+{
+	background-color: #1b9ed4;
+}
+#subject .button .submit
+{
+	width: 86px;
+	background-color: #FF7000;
+}
+#subject .button .submit:hover
+{
+	background-color: #D35400;
+}
+/*--------------------课程页面导航菜单---------------*/
+.main .chapter .left td
+{
+	width: 100%;
+	height: 62px;
+	border-bottom: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #858585;
+	cursor: pointer;
+}
+.main .chapter .left td:hover
+{
+	background-color: #FAFAFA;
+}
+.main .chapter .left td.top
+{
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+	cursor: inherit;
+}
+.main .chapter .left td.top:hover
+{
+	background-color: #ffffff;
+}
+.main .chapter .left td div
+{
+	float: left;
+}
+.main .chapter .left td div.number
+{
+	margin-top: 2px;
+	margin-left: 15px;
+	width: 22px;
+}
+.main .chapter .left td div.number img
+{
+	margin-right: 1px;
+}
+.main .chapter .left td div.text
+{
+	font-family: 微软雅黑;
+	width: 100px;
+}
+.main .chapter .left td div.add
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	float: right;
+	padding-top: 2px;
+	cursor: pointer;
+	width: 13px;
+	height: 14px;
+	background-image: url( '../images/chapter_nav_add_off.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .chapter .left td div.add:hover
+{
+	background-image: url( '../images/chapter_nav_add_on.png' );
+}
+.main .chapter .left td div.sub
+{
+	background-image: url( '../images/chapter_nav_sub_off.png' );
+}
+.main .chapter .left td div.sub:hover
+{
+	background-image: url( '../images/chapter_nav_sub_on.png' );
+}
+.main .chapter .left td.open
+{
+	color: #FF7000;
+	border-right: 0px;
+}
+.main .chapter .left td.section
+{
+	height: auto;
+	font-size: 12px;
+	padding: 10px 0px 10px 20px;
+	cursor: inherit;
+	border-left: 0px;
+	font-family: 微软雅黑;
+}
+.main .chapter .left td.section:hover
+{
+	background-color: #ffffff;
+}
+.main .chapter .left td.section div
+{
+	float: inherit;
+	background-image: url( '../images/chapter_nav_section_icon.png' );
+	background-position: left 5px;
+	background-repeat: no-repeat;
+	width: 140px;
+	padding-left: 10px;
+	margin-top: 5px;
+}
+.main .chapter .left td.section div.on
+{
+	background-image: url( '../images/chapter_nav_section_icon_on.png' );
+}
+.main .chapter .left td.section div a
+{
+	color: #858585;
+	border-bottom: 1px solid #ffffff;
+}
+.main .chapter .left td.section div.on a
+{
+	color: #FF7000;
+}
+.main .chapter .left td.section div a:hover
+{
+	color: #FF7000;
+	border-bottom: 1px solid #FF7000;
+}
+.main .chapter .left td.section div.on a:hover
+{
+	color: #FF7000;
+	border-bottom: 1px solid #ffffff;
+}
+.main .prize
+{
+	margin: 18px 30px 45px 0px;
+}
+.main .prize img
+{
+	width: 200px;
+	height: 200px;
+}
+.main .prize .prize_box
+{
+	margin-top: 30px;
+	float: left;
+	margin-left: 30px;
+	width: 200px;
+}
+.main .prize .prize_box img
+{
+	height: 200px;
+	width: 200px;
+}
+.main .prize .prize_name
+{
+	margin-top: 14px;
+}
+.main .prize .prize_explain
+{
+	margin-top: 10px;
+	height: 47px;
+	color: #858585;
+}
+.main .prize .prize_but
+{
+	margin-top: 10px;
+}
+.main .prize .prize_but div.left
+{
+	float: left;
+	cursor: inherit;
+}
+.main .prize .prize_but div.right
+{
+	float: right;
+}
+.main .prize .prize_but div
+{
+	padding-top: 9px;
+	padding-bottom: 9px;
+	background-color: #54c3f1;
+	cursor: pointer;
+	color: #ffffff;
+	width: 95px;
+}
+.main .prize .prize_but div:hover
+{
+	background-color: #0F92CA;
+}
+.main .prize .prize_but div.off
+{
+	background-color: #E6E1D9;
+	color: #999999;
+	cursor: inherit;
+}
+.main .prize .prize_but div.off:hover
+{
+	background-color: #E6E1D9;
+}
+.main .prize .prize_but div.left:hover
+{
+	background-color: #54c3f1;
+}
+/*--------------------积分记录页面------------------*/
+.main .record
+{
+	margin-top: 8px;
+}
+.main .record .left
+{
+	height: 285px;
+	width: 124px;
+	background-image: url( '../../../images/bj.jpg' );
+	vertical-align: bottom;
+}
+.main .record .left .down
+{
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 微软雅黑;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 100%;
+	background-color: #54c3f1;
+}
+.main .record .right
+{
+}
+.main .record .right iframe
+{
+	width: 826px;
+	height: 285px;
+}
+.main .record_jiao
+{
+	background-image: url( '../images/record_jiao.png' );
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 10px;
+}
+.main .record_list .title
+{
+	background-color: #7d7d7d;
+	color: #ffffff;
+}
+.main .record_list td
+{
+	height: 25px;
+	padding-left: 22px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+.main .record_list .bright
+{
+	background-color: #ededed;
+	color: #333333;
+}
+.main .record_list .bright td
+{
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding-left: 18px;
+}
+.main .record_list .dark
+{
+	color: #333333;
+}
+.main .record_list .dark td
+{
+	padding-left: 18px;
+	border-right: 1px solid #e5e5e5;
+}
+.main .record_list td.rightnone
+{
+	border-right: 0px;
+}
+.main .ucneter_prize
+{
+	margin-top: 16px;
+	border: 10px solid #9b59b6;
+	height: 150px;
+	background-image: url( '../images/ucenter_prize.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main .ucneter_prize div
+{
+	height: 40px;
+	width: 130px;
+	cursor: pointer;
+	float: right;
+	margin-top: 55px;
+	margin-right: 20px;
+}
+.main .ucneter_banner
+{
+	margin-top: 16px;
+	height: 50px;
+	background-image: url( '../images/ucenter_banner.png' );
+}
+.main .ucneter_banner div
+{
+	margin-top:15px;
+	font-size:16px;
+	float:left;
+	margin-left:180px;
+}

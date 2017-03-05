@@ -1,0 +1,127 @@
+﻿body {
+}
+table
+{
+	width:100%;
+	}
+.nav
+{
+	height:auto;
+	font-size:14px;
+	padding:10px 0px 10px 20px;
+	cursor:pointer;
+	border-left:0px;
+	color:#858585;
+	font-family:微软雅黑;
+	border-bottom:1px solid #ededed;
+	}
+.nav:hover
+{
+	background-color:#f3f2f2;
+	}
+.nav_on
+{
+	color:#ffffff;
+	background-color:#54c3f1;
+	}
+.nav_on:hover
+{
+	background-color:#54c3f1;
+	}
+.nav1
+{
+	height:auto;
+	font-size:14px;
+	padding:10px 30px 10px 20px;
+	cursor:pointer;
+	border-left:0px;
+	color:#858585;
+	font-family:微软雅黑;
+	border-bottom:1px solid #ededed;
+	
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-color:#f3f2f2;
+	}
+.nav1:hover
+{
+	color:#ffffff;
+	background-color:#54c3f1;
+	}
+.nav1_on
+{
+	color:#ffffff;
+	background-color:#54c3f1;
+	}
+.nav1_on:hover
+{
+	background-color:#54c3f1;
+	}
+	
+.nav2
+{
+	height:auto;
+	font-size:12px;
+	padding:10px 20px 10px 30px;
+	cursor:pointer;
+	border-left:0px;
+	color:#575757;
+	font-family:微软雅黑;
+	background-color:#BEE8FA;
+	border-bottom:1px solid #ededed;
+	}
+.nav2:hover
+{
+	background-color:#7BD0F4;
+	color:#ffffff;
+	}
+.nav2_on
+{
+	color:#ffffff;
+	background-color:#7BD0F4;
+	}
+.nav3_border
+{
+	padding-top:10px;
+	border-bottom:1px solid #ededed;
+	padding-bottom:10px;
+	display:none;
+	}
+.nav3
+{
+	font-size:12px;
+	padding:2px 20px 2px 20px;
+	border-left:0px;
+	color:#858585;
+	font-family:微软雅黑;
+	}
+.nav3 a
+{
+	color:#858585;	
+	}
+.nav3 a:hover
+{
+	color:#1BAEED;
+	}
+.nav3 div
+{
+	background-image:url('../images/chapter_nav_section_icon.png');
+	background-position:left 5px;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	margin-top:5px;
+	width:100%;
+	}
+	
+.nav3_on a
+{
+	color:#1BAEED;
+	}
+.nav3_on div
+{
+	background-image:url('../images/chapter_nav_section_icon_on.png');
+	}
+.nav2_border
+{
+	display:none;
+	}

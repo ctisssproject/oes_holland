@@ -1,0 +1,669 @@
+﻿/* 图片新闻轮播 */
+.img_bottom_text
+{
+    width:100%;
+    height:25px;
+    float:left;
+    margin-top:-25px;
+    position:relative;
+    z-index:150;
+}
+.img_bottom
+{
+    width:100%;
+    height:25px;
+    float:left;
+    background-color:#000;
+    background-image:url(../images/bg-line.png);
+    background-size:3px 3px;
+    opacity:0.7 !important;
+}
+.text_box{
+    width:100%;
+    height:25px;
+    float:left;
+    margin-top:-25px;
+    overflow:hidden;
+}
+.img_bottom_text h1
+{
+    width:60px;
+    height:25px;
+    float:left;
+    text-align:center;
+    color:#fff;
+    border-left:3px solid #1b1b1b;
+    border-right:3px solid #1b1b1b;
+    font-size:16px;
+    line-height:25px;
+    margin-left:10px;
+    position:relative;
+}
+.test_list{
+    width:75%;
+    float:left;
+    position:relative;
+    margin-left:5px;
+}
+.img_bottom_text h2
+{
+    width:100%;
+    height:25px;
+    float:left;
+    color:#fff;
+    font-size:16px;
+    line-height:25px;
+    position:relative;
+    margin-left:5px;
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;
+}
+/* 4个方块按钮 */
+.botton_box
+{
+    width:94%;
+    float:left;
+    margin:10px 0 0 3%;
+}
+.but_div
+{
+    width:23.5%;
+    float:left;
+    margin:0 2% 10px 0;
+    overflow:hidden;
+}
+.but_div span
+{
+    width:100%;
+    text-align:center;
+    line-height:40px;
+    float:left;
+}
+.lesson_info,
+.contact_us
+{
+    font-size:30px;
+    color:#fff;
+}
+.lesson_info
+{
+    background-color:#3fbaa5;
+    float:left;
+}
+.contact_us
+{
+    background-color:#bc89d2;
+    margin-right:0;
+    float:right;
+}
+.lesson_info h1,
+.contact_us h1
+{
+    width:100%;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;
+    text-align:center;
+    float:left;
+}
+
+/* 三角形按钮 */
+.login_sign_bg,
+.weixin_weibo_bg
+{
+    width:0px;
+    height:0px;
+    border-style:solid;
+}
+.login_sign_bg 
+{
+    float:left;
+    border-color:#ff6f00 #ebe9df #ebe9df #ff6f00;
+}
+.weixin_weibo_bg
+{
+    float:right;
+    border-color:#ededed #ededed #e6e6e6 #e6e6e6;
+}
+
+.login_sign_box,
+.weixin_weibo_box{
+    width:100%;
+    float:left;
+}
+.login_div,
+.sign_div,
+.weixin_div,
+.weibo_div
+{
+    float:left;
+    position:relative;
+}
+.login_div h1,
+.sign_div h1{
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:30px;
+    position:absolute;
+}
+.login_div h1{
+    text-align:right;
+    color:#fff;
+    bottom:0px;
+}
+.sign_div h1{
+    text-align:left;
+    color:#8d897f;
+}
+.weixin_div img,
+.weibo_div img{
+    width:30px;
+    height:30px;
+}
+.weixin_div img{
+    float:left;
+    position:absolute;
+    bottom:4px;
+}
+.weibo_div img{
+    float:right;
+    position:absolute;
+    top:4px;
+    right:0px;
+}
+
+
+/* 最新动态 */
+.new_message
+{
+    width:94%;
+    margin-left:3%;
+    float:left;
+    margin-bottom:8px;
+}
+.message_title
+{
+    width:100%;
+    height:32px;
+    float:left;
+    background-color:#53c3f1;
+}
+.message_title h1
+{
+    font-size:16px;
+    line-height:32px;
+    margin-left:4%;
+    float:left;
+    color:#fff;
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+}
+.message_title span
+{
+    width:32px;
+    line-height:32px;
+    font-size:12px;
+    color:#199ed4;
+    border-left:1px solid #199ed4;
+    float:right;
+    text-align:center;
+}
+.new_message ul
+{
+    width:100%;
+    float:left;
+}
+.new_message ul li
+{
+    width:100%;
+    float:left;
+    padding:8px 0px;
+}
+.bg_c1
+{
+    background-color:#199ed4;
+}
+.bg_c2
+{
+    background-color:#30a7d8;
+}
+.new_message ul li span
+{
+    font-size:14px;
+    float:left;
+    margin-left:4%;
+    color:#fff;
+    line-height:20px;
+}
+.message_text
+{
+    width:80%;
+    float:left;
+    margin-left:5px;
+}
+.message_text h1
+{
+    width:100%;
+    height:20px;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#fff;white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;
+}
+.message_text h2
+{
+    width:100%;
+    float:left;
+    font-size:16px;
+    color:#fff;
+}
+
+/* 合作商家 */
+.partner_box
+{
+    width:94%;
+    margin-left:3%;
+    float:left;
+}
+.klm_div
+{
+    width:30%;
+    float:right;
+    margin:0px 0px 10px 3%;
+    overflow:hidden;
+}
+.klm_img
+{
+    float:right;
+}
+.klm_logo
+{
+    width:45px;
+    height:45px;
+    margin:5px 0px;
+}
+.klm_bottom
+{
+    width:100%;
+    height:35px;
+    float:left;
+    background-color:#009ddc;
+    text-align:center;
+}
+.klm_bottom h1
+{
+    width:90%;
+    padding:0 5%;
+    font-size:14px;
+    line-height:20px;
+    color:#fff;
+    float:left;
+    text-align:left;
+}
+.cjj_airport_div{
+    width:67%;
+    float:left;
+    margin-bottom:10px;
+}
+.cjj_div
+{
+    width:48%;
+    float:left;
+}
+.air_div
+{
+    width:48%;
+    float:right;
+}
+.cjj_div img,
+.air_div img
+{
+    height:100%;
+    float:left;
+}
+.cjj_div h1,
+.air_div h1{
+    width:90%;
+    float:left;
+    padding:2px 6%;
+    color:#fff;
+    line-height:18px;
+    font-size:14px;
+    margin-top:-39px;
+}
+.cjj_div h1{
+    background-color:#f4801d;
+}
+.air_div h1{
+    background-color:#f9c732;
+}
+.amsterdam_div
+{
+    width:100%;
+    float:left;
+    margin-top:10px;
+    overflow:hidden;
+}
+.amsterdam_botttom{
+    width:90%;
+    float:left;
+    padding:2px 6%;
+    background-color:#d63635;
+    margin-top:-39px;
+}
+.amsterdam_img
+{
+    float:left;
+}
+.amsterdam_botttom img{
+    height:20px;
+    float:left;
+}
+.amsterdam_botttom h1{
+    width:100%;
+    height:16px;
+    float:left;
+    font-size:14px;
+    line-height:16px;
+    color:#fff;
+}
+
+/* 合作品牌 */
+.partner
+{
+    overflow:hidden;
+}
+.cooperative_brand
+{
+    width:95%;
+    min-height:80px;
+    float:left;
+    background:url(../images/logo-holland.png) no-repeat top left;
+    background-size:100%;
+    padding-bottom:20px;
+    margin-top:15px;
+}
+.brand_box
+{
+    width:72%;
+    height:35px;
+    margin-top:10px;
+    margin-left:3%;
+}
+.brand_box img
+{
+    float:left;
+    margin-right:5px;
+    width:28%;
+}
+
+
+/* 新闻列表 */
+.news_list_title,
+.persnol_title
+{
+    width:94%;
+    margin-left:3%;
+    height:40px;
+    float:left;
+    margin-bottom:10px;
+    background:url(../images/reg-title-bar.png) #ebe9df no-repeat right;
+}
+.news_list_title h2
+{
+    height:40px;
+    float:left;
+    line-height:40px;
+    font-size:14px;
+    color:#747474;
+    margin-left:10px;
+}
+.list_title_icon
+{
+    width:100px;
+    height:40px;
+    float:left;
+    background-color:#ff6f00;
+}
+.list_title_icon span,
+.list_title_icon h1
+{
+    font-size:16px;
+    color:#fff;
+    line-height:40px;
+    float:left;
+}
+.list_title_icon span
+{
+    width:30px;
+    text-align:center;
+}
+.right_triangle {
+    width:0px;
+    height:0px;
+    border:5px solid #ebe9df;
+    border-left:5px solid #ff6f00;
+    margin-top:15px;
+    float:left;
+}
+.answer_left_triangle
+{
+    width:0px;
+    height:0px;
+    border:5px solid #199ed4;
+    border-right:5px solid #53c3f1;
+    margin:15px 0px 15px -10px;
+    float:left;
+}
+.news_list_box
+{
+    width:94%;
+    margin-left:3%;
+    margin-bottom:20px;
+    float:left;
+}
+.news_div
+{
+    width:100%;
+    height:50px;
+    float:left;
+}
+.news_div h1,
+.news_div h2
+{
+    width:85%;
+    padding-left:10%;
+    float:left;
+}
+.news_div h1
+{
+    color:#5c5c5c;
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+    font-size:16px;
+    line-height:20px;
+    margin-top:6px;
+}
+.news_div h2
+{
+    color:#787878;
+    font-size:14px;
+    line-height:18px;
+}
+.bg
+{
+    background-color:#f7f7f7;
+}
+
+
+/* 新闻内容 */
+.content_box
+{
+    width:94%;
+    margin-left:3%;
+    margin-bottom:10px;
+    float:left;
+}
+.news_date
+{
+    width:100%;
+    float:left;
+}
+.news_date h1
+{
+    font-size:14px;
+    color:#fff;
+    background-color:#30a1d2;
+    padding:5px;
+    margin:10px;
+    float:left;
+}
+.content_box h2,
+.content_box .content
+{
+    width:85%;
+    padding-left:10%;
+    font-size:16px;
+    color:#5c5c5c;
+}
+.content_box h2
+{
+    font-weight:bold;
+    margin:16px 0px;
+}
+.content_box a
+{
+    color:#12a0db;
+    font-size:16px;
+}
+.news_button
+{
+    width:90%;
+    float:right;
+    margin-top:50px;
+    padding:10px;
+}
+.content_box .content
+{
+    width:85%;
+    padding-left:10%;
+    font-size:16px;
+    color:#5c5c5c;
+}
+.content_box .content img
+{
+    width:100%;
+}
+
+
+/* 个人中心 */
+.persnol_title h3
+{
+    font-size:14px;
+    line-height:18px;
+    margin-top:2px;
+    float:left;
+    color:#747474;
+}
+.title_icon
+{
+    width:120px;
+    height:40px;
+    float:left;
+    background-color:#ff6f00;
+}
+.title_icon span,
+.title_icon h1
+{
+    line-height:40px;
+    float:left;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+}
+.title_icon span
+{
+    width:40px;
+    height:40px;
+}
+.title_icon h1
+{
+    width:80px;
+}
+.per_num
+{
+    width:60px;
+    height:40px;
+    float:left;
+    margin-right:10px;
+}
+
+.persnol_blue_but
+{
+    width:80px;
+    height:60px;
+    float:right;
+}
+.blue_but
+{
+    width:80px;
+    height:26px;
+    float:left;
+    background-color:#089ddb;
+}
+.blue_but span,
+.blue_but h1
+{
+    float:left;
+    line-height:26px;
+    text-align:center;
+    color:#fff;
+    font-size:14px;
+    height:26px;
+}
+.blue_but span
+{
+    width:20px;
+}
+.blue_but h1
+{
+    width:60px;
+}
+.lesson_img
+{
+    width:75px;
+    height:75px;
+    float:left;
+    margin-left:12px;
+}
+.lesson_content
+{
+    float:left;
+    min-height:75px;
+    margin-left:10px;
+    position:relative;
+    background-color:#ebe9df;
+}
+.lesson_content h1
+{
+    width:100%;
+    float:left;
+    font-size:16px;
+    color:#5c5c5c;
+    line-height:20px;
+    text-align:left;
+}
+.gift_title
+{
+    width:94%;
+    margin-left:3%;
+    height:40px;
+    float:left;
+    background-color:#EBE9DF;
+}

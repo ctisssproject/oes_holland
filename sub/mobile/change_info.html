@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>修改信息</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="stylesheet" href="css/login.css" />
+    <link type="text/css" rel="Stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+
+    <script src="js/mobiscroll.core-2.5.2.js" type="text/javascript"></script>
+    <script src="js/mobiscroll.core-2.5.2-zh.js" type="text/javascript"></script>
+
+    <link href="css/mobiscroll.core-2.5.2.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.animation-2.5.2.css" rel="stylesheet" type="text/css" />
+    <script src="js/mobiscroll.datetime-2.5.1.js" type="text/javascript"></script>
+    <script src="js/mobiscroll.datetime-2.5.1-zh.js" type="text/javascript"></script>
+
+    <link href="css/mobiscroll.android-ics-2.5.2.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript">
+        $(function () {
+            var currYear = (new Date()).getFullYear();
+            var opt = {};
+            opt.date = { preset: 'date', minDate: new Date(1950, 1, 1) };
+            opt.default = {
+                theme: 'android-ics light', //皮肤样式
+                display: 'modal', //显示方式
+                mode: 'scroller', //日期选择模式
+                lang: 'zh',
+                endYear: currYear - 0 //结束年份
+            };
+
+            $("#appDate").val('2000-03-03').scroller('destroy').scroller($.extend(opt['date'], opt['default']));
+            //var appDate = $.extend(opt['appDate'], opt['default']);
+            //$("#appDate").mobiscroll(appDate).date(appDate);
+        });
+        function cho_sex(a) {
+            if (a == "wo") {
+                $(".man").css({ "background-color": "#f2f0e7", "color": "#747474" });
+                $(".woman").css({ "background-color": "#ff6f00", "color": "#fff" });
+            } else {
+                $(".woman").css({ "background-color": "#f2f0e7", "color": "#747474" });
+                $(".man").css({ "background-color": "#ff6f00", "color": "#fff" });
+            }
+        }
+    </script>
+</head>
+<body style="background:none;">
+    <div class="title">
+        <img alt="" class="title_l" src="images/logo-full.png" />
+        <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+    </div>
+    <div class="news_list_title">
+        <div class="list_title_icon">
+            <span class="icon-user"></span>
+            <h1>修改信息</h1>
+        </div>
+        <div class="right_triangle"></div>
+        <h2>欢迎你:赵蕊蕊  当前积分:41分</h2>
+    </div>
+    <div class="sign_in_box page_2 change_info">
+        <div class="account_info">
+            <div class="account_info_title">
+                账号信息
+            </div>
+            <div class="account_email">
+                <h1>电子邮箱</h1>
+                <div class="input_box email">
+                    <input type="text" value="kelvin@gamil.com" />
+
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="per_info">
+            <div class="per_info_title">
+                个人信息
+            </div>
+            <div class="account_name">
+                <h1>真实姓名（请填写中文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="account_birthday">
+                <h1>生日</h1>
+                <div class="birthday_box">
+                    <input type="text" id="appDate" />
+                </div>
+                <div class="woman" onclick="cho_sex('wo')">女</div>
+                <div class="man" onclick="cho_sex('man')">男</div>
+            </div>
+            <div class="account_com">
+                <h1>公司名称（请填写中文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="account_com">
+                <h1>公司名称（英文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>职务</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>职务（英文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>部门</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>部门（英文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_info">
+            <div class="contact_info_title">
+                联系信息
+            </div>
+            <div class="account_job">
+                <h1>区号</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>直线</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>总机</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>分机</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_tel">
+                <h1>手机号</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>传真</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>地区</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>省</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>市</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>邮政编码</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>地址</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>地址（英文）</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_job">
+                <h1>即时通讯</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross" style="display:none;">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_dep">
+                <h1>Skype</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>电子邮箱</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>电子邮箱（备用）</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="account_address">
+                <h1>网址</h1>
+                <div class="input_box">
+                    <input type="text" />
+                    <!-- 对勾容器 -->
+                    <div class="check" style="display:none;">
+                        <span class="icon-check"></span>
+                    </div>
+                    <!-- 叉子容器 -->
+                    <div class="cross">
+                        <span class="icon-cross"></span>
+                        <h2>不能为空</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="submit_box">
+                <div class="submit_but">
+                    保存
+                </div>
+                <div class="submit_but cancle_bg">
+                    取消
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

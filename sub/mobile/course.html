@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>培训课程</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="Stylesheet" href="css/holland_6.css" />
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        function set_w() {
+            var win_w = $(window).width(),
+                i_six_w = Math.round(win_w * 0.94 * 0.23),
+                six_m_t = (i_six_w - 60) / 2,
+                six_bor = i_six_w / 2 + "px",
+                i_six_p = win_w * 0.94 * 0.67 * 0.48,
+                six_klm_img_h = i_six_p + 10 + "px",
+                info_w = (win_w * 0.94) - 55
+                h=$(".title").height()+15;
+            
+            $(".but_div").css("height", i_six_w);
+            $(".lesson_info span , .contact_us span").css("margin-top", six_m_t);
+            $(".login_sign_bg , .weixin_weibo_bg").css("border-width", six_bor);
+            $(".login_sign_box , .weixin_weibo_box").css("margin-top", -i_six_w);
+            $(".login_div , .weibo_div").css({ "width": six_bor, "height": six_bor });
+            $(".sign_div , .weixin_div").css({ "width": six_bor, "height": six_bor, "margin-left": six_bor });
+            $(".klm_img").css("height", six_klm_img_h);
+            $(".amsterdam_img , .klm_bottom , .cjj_div , .air_div").css("height", i_six_p);
+            $(".course_info").css("width", info_w);
+            $(".left_menu").css("top",h);
+        }
+        $(function () {
+            set_w();
+        });
+        $(window).on('orientationchange', function () {
+            location.reload();
+        });
+        function move_top() {
+            $("html, body").scrollTop(0);
+        }
+        function show_menu() {
+            $(".left_menu").animate({ left: "0" }, 500);
+        }
+        function hide_menu() {
+            $(".left_menu").animate({ left: "-85%" }, 500);
+        }
+        function show_info(a) {
+            var dis = $(a).next("ul").css("display");
+            if (dis == "none") {
+                $(".left_menu ul").slideUp(500);
+                $(".list_info").find("span").removeClass("icon-minus");
+                $(".list_info").find("span").addClass("icon-plus");
+                $(a).next("ul").slideDown(500);
+                $(a).find("span").removeClass("icon-plus");
+                $(a).find("span").addClass("icon-minus");
+            } else {
+                $(a).next("ul").slideUp(500);
+                $(a).find("span").removeClass("icon-minus");
+                $(a).find("span").addClass("icon-plus");
+            }
+        }
+        function show_help() {
+            var dis = $(".share_help").css("display");
+            if (dis == "none") {
+                $(".share_help").slideDown(500);
+                $(".share_but").css("background-color", "#ff6f00");
+                $(".share_but span").css("color", "#fff");
+            } else {
+                $(".share_help").slideUp(500);
+                $(".share_but").css("background-color", "#ebe9df");
+                $(".share_but span").css("color", "#747474");
+            }
+        }
+    </script>
+</head>
+<body>
+     <div class="page_box">
+        <div class="title">
+            <img alt="" class="title_l" src="images/logo-full.png" />
+            <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+        </div>
+        <div class="persnol_title">
+            <div class="title_icon">
+                <span class="icon-menu bg_brown" onclick="show_menu()"></span>
+                <h1>培训课程</h1>
+            </div>
+            <div class="right_triangle"></div>
+            <h4>欢迎你:赵蕊蕊 当前积分:41分</h4>
+        </div>
+        <div class="box course_title_img">
+            <img alt="" src="images/off4.jpg" />
+        </div>
+        <div class="box course_info_box m_t_4 m_b_15">
+            <div class="course_num">1</div>
+            <div class="course_info">
+                <h1>荷兰，那些不可错过的地方</h1>
+                <p>通过本章的学习，您将了解到:</p>
+                <h2>荷兰皇家航空公司篇</h2>
+                <h3>荷兰皇家航空公司中国航线的本土化服务（RDS）</h3>
+                <p>1. 强大的中文服务：在阿姆斯特丹史基浦机场提供网上值机和转机系统的中文服务</p>
+                <p>2. 在中国航线的航班上配备了中国的空乘人员</p>
+                <p>3. 细致、周到的客舱服务：环宇商务舱和经济舱中均有西式套餐和正宗中式套餐可供选择</p>
+                <h2>阿姆斯特丹史基浦机场篇</h2>
+                <h3>阿姆斯特丹史基浦机场 通往欧洲的门户</h3>
+                <p>阿姆斯特丹史基浦机场(Amsterdam Airport Schiphol)被公认为世界上最好的机场之一。每周57个直飞航班由中国的7座城市飞往160多个欧洲目的地，史基浦机场无疑是您通往欧洲的门户。</p>
+                <p>1. 史基浦机场的购物体验及退税攻略</p>
+                <p>2. 史基浦机场独特的旅客休闲体验</p>
+                <p>3. 史基浦机场的自助值机服务和中式服务</p>
+                <p>4. 史基浦机场的美食之旅</p>
+            </div>
+
+            <div class="row answer_question">
+                <h1>答题</h1>
+                <div class="answer_left_triangle"></div>
+                <div class="answer_text">
+                    <h2>
+                        点击答题按钮，开始回答问题。<br />
+                        共3题，答对100%便可完成本节课程。
+                    </h2>
+                </div>
+                <span class="icon-none"></span>
+            </div>
+
+            <div class="row answer_question">
+                <h1>答题</h1>
+                <div class="answer_left_triangle"></div>
+                <div class="answer_text">
+                    <h2>
+                        您已通过本节测试，<br />请前往其他章节学习。
+                    </h2>
+                </div>
+                <span class="icon-done"></span>
+            </div>
+
+            <div class="share_help">
+                <img alt="" src="images/share.png" />
+                <div class="bottom_triangle"></div>
+            </div>
+
+            <div class="row m_b_8 m_t_8">
+                <div class="go_back">
+                    返回首页
+                </div>
+                <div class="go_top" onclick="move_top()">
+                    <span class="icon-top"></span>
+                </div>
+                
+                <div class="share_but" onclick="show_help()">
+                    <span class="icon-share"></span>
+                </div>
+
+                <div class="next_course">
+                    下一节
+                </div>
+                <div class="previous_course">
+                    上一节
+                </div>
+            </div>
+        </div>
+
+        <div class="new_message">
+            <div class="message_title">
+                <h1>最新资讯</h1>
+                <span class="icon-next"></span>
+            </div>
+            <ul>
+                <li class="bg_c1">
+                    <span class="icon-news"></span>
+                    <div class="message_text">
+                        <h1>2014“荷兰旅游专家”在线培训课程正式上线</h1>
+                        <h2>2014-10-13</h2>
+                    </div>
+                </li>
+                <li class="bg_c2">
+                    <span class="icon-news"></span>
+                    <div class="message_text">
+                        <h1>荷兰加快签证受理时间，平均仅为48小时</h1>
+                        <h2>2014-09-26</h2>
+                    </div>
+                </li>
+                <li class="bg_c1">
+                    <span class="icon-news"></span>
+                    <div class="message_text">
+                        <h1>史基浦机场开通免费WIFI服务</h1>
+                        <h2>2014-09-01</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="partner_box">
+            <div class="klm_div">
+                <img class="klm_img" alt="" src="images/off1.jpg" />
+                <div class="klm_bottom">
+                    <img class="klm_logo" alt="" src="images/logo-klm.png" />
+                    <h1>荷兰皇家航空公司</h1>
+                </div>
+            </div>
+            <div class="cjj_airport_div">
+                <div class="partner cjj_div">
+                    <img alt="" src="images/off2.jpg" />
+                    <h1>荷兰国家旅游<br />会议促进局</h1>
+                </div>
+                <div class="partner air_div">
+                    <img alt="" src="images/off3.jpg" />
+                    <h1>阿姆斯特丹<br />史基浦机场</h1>
+                </div>
+                
+                <div class="amsterdam_div">
+                    <img class="amsterdam_img" alt="" src="images/off5.jpg" />
+                    <div class="amsterdam_botttom">
+                        <img alt="" src="images/logo-iamsterdam.png" />
+                        <h1>阿姆斯特丹市</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cooperative_brand">
+            <div class="brand_box">
+                <img alt="" src="images/logo-maastricht.png" />
+                <img alt="" src="images/logo-madurodam.png" />
+                <img alt="" src="images/logo-rotterdam.png" />
+            </div>
+        </div>
+        <div class="page_bottom">
+            <h1>Copyright©2013 Holland.com.cn Allrights reserved<br />荷兰国家旅游会议促进局官方网站 版权所有</h1>
+        </div>
+    </div>
+
+
+    <div class="left_menu">
+        <div class="left_menu_title">
+            <div class="hide_but" onclick="hide_menu()">
+                <span class="icon-back"></span>
+            </div>
+            <h1>赵蕊蕊</h1>
+            <div class="persnol_center_but">
+                <span class="icon-user"></span>
+                <h2>个人中心</h2>
+            </div>
+        </div>
+        <div class="top_triangle menu_tri_position"></div>
+        <div class="integral">
+            <div class="now_integral">
+                <h1>当前积分</h1>
+                <h2>319</h2>
+            </div>
+            <div class="doc_but">
+                <span class="icon-doc"></span>
+                <h1>获取资料</h1>
+            </div>
+            <div class="gift_but">
+                <span class="icon-gift"></span>
+                <h1>兑换奖品</h1>
+            </div>
+        </div>
+        <div class="menu_list">
+            <div class="row">
+                <div class="list_info">
+                    <h1>课程目录</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>01.荷兰，那些不可错过的地方</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>欧洲首选机场：阿姆斯特丹史基浦机场</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>阿姆斯特丹2015：创造力、决断力、开放性思维</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>沧韵古城-马特斯里赫特</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>马德罗丹微缩城，浓缩荷兰一城中</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>世界建筑博物馆-鹿特丹</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>02.送给我们最好的礼物</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>欧洲首选机场：阿姆斯特丹史基浦机场</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>03.送给父母最好的礼物</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>欧洲首选机场：阿姆斯特丹史基浦机场</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>阿姆斯特丹2015：创造力、决断力、开放性思维</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>沧韵古城-马特斯里赫特</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>04.荷兰世界遗产名录</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>05.荷兰世界之最</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>欧洲首选机场：阿姆斯特丹史基浦机场</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>阿姆斯特丹2015：创造力、决断力、开放性思维</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="list_info" onclick="show_info(this)">
+                    <h1>06.荷兰Top10景点</h1>
+                    <span class="icon-plus"></span>
+                </div>
+                <ul>
+                    <li>
+                        <span>●</span>
+                        <h2>荷兰皇家公司</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>欧洲首选机场：阿姆斯特丹史基浦机场</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>阿姆斯特丹2015：创造力、决断力、开放性思维</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>沧韵古城-马特斯里赫特</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>马德罗丹微缩城，浓缩荷兰一城中</h2>
+                    </li>
+                    <li>
+                        <span>●</span>
+                        <h2>世界建筑博物馆-鹿特丹</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>荷兰旅游专家-在线认证系统</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/ucenter.css" />
+
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../../js/common.fun.js"></script>
+
+    <script type="text/javascript" src="../../js/dialog.fun.js"></script>
+
+    <script type="text/javascript" src="js/common.fun.js"></script>
+
+    <script type="text/javascript" src="../../js/login.fun.js"></script>
+
+</head>
+<body>
+    <div align="center">
+        <table class="main" border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td class="center">
+                    <table class="logo" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="left">
+                                <a href="index.php" hidefocus="true" title="返回首页">
+                                    <img src="../../images/logo.png" alt="返回首页" /></a>
+                            </td>
+                            <td class="right">
+                                <img src="../../images/lianmeng04.png" alt="" />
+                                <img src="../../images/lianmeng03.png" alt="" />
+                                <img src="../../images/lianmeng02.png" alt="" />
+                                <img src="../../images/lianmeng01.png" alt="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="my" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="title">
+                                &nbsp;
+                            </td>
+                            <td class="title_right">
+                                <div class="top">
+                                    <div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <div class="jiao">
+                                    </div>
+                                    <div class="text">
+                                        欢迎你：初涛 当前积分：298分
+                                    </div>
+                                    <div class="botton" title="去兑换奖品">
+                                        积分换礼品
+                                    </div>
+                                    <div class="exit" title="退出系统" onclick="Dialog_Confirm('是否真的要退出？',function(){location='../../index.php'})">
+                                    </div>
+                                    <div class="modify_password" title="修改登录密码" onclick="goTo('modify_password.php')">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="reginfo">
+                                <div class="bj">
+                                    <div>
+                                        <span>当前注册：</span><br />
+                                        2008人<br />
+                                        <span>专家称号：</span><br />
+                                        216人<br />
+                                        <span>我的排名：</span><br />
+                                        19位</div>
+                                    <div class="down" onclick="Dialog_Iframe('dialog/invitation_firend.php?uid=<?php echo($O_Session->getUid())?>',252,260)"
+                                        title="给好友发送邀请函">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="icon">
+                                <div style="float: left; width: 108px">
+                                    <div class="_1" onclick="" title="修改头像">
+                                    </div>
+                                    <div class="_2">
+                                        <img src="images/user_photo.jpg" alt="" />
+                                    </div>
+                                    <div class="_6" title="修改个人信息">
+                                    </div>
+                                </div>
+                                <div class="_4 _45">
+                                    <div class="top">
+                                    </div>
+                                    <div class="text">
+                                        <span>-完成度-</span><br />
+                                        48%</div>
+                                </div>
+                                <div class="_4_ok" align="center" style="display: none">
+                                    <div class="text">
+                                        用户名
+                                    </div>
+                                </div>
+                                <div class="_3" style="display: none">
+                                    <div class="top">
+                                        <div class="text">
+                                        </div>
+                                        <div class="jiao">
+                                        </div>
+                                    </div>
+                                    <div class="center" title="点击查看积分记录">
+                                        <img src="images/fen_2.png" alt="点击查看积分记录" /><img src="images/fen_8.png" alt="点击查看积分记录" /><img
+                                            src="images/fen_9.png" alt="点击查看积分记录" />
+                                    </div>
+                                    <div class="down" title="去兑换奖品">
+                                    </div>
+                                </div>
+                                <div style="float: left;">
+                                    <div class="_5 big" align="center">
+                                        <div class="top">
+                                            <div class="text">
+                                            </div>
+                                            <div class="jiao">
+                                            </div>
+                                        </div>
+                                        <div class="down" align="left">
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="textok" align="center">
+                                                        100%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bjok" style="margin-top: 0px; height: 30px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    库肯霍夫<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        60%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 12px; height: 18px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    乌特勒支<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        50%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 15px; height: 15px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    鹿特丹<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        0%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 30px; height: 0px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    海牙<br />
+                                                    旅游专家</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_5 add big" id="single_add">
+                                        <div class="down">
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="textok" align="center">
+                                                        100%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bjok" style="margin-top: 0px; height: 30px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    库肯霍夫<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        60%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 12px; height: 18px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    乌特勒支<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        50%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 15px; height: 15px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    鹿特丹<br />
+                                                    旅游专家</div>
+                                            </div>
+                                            <div>
+                                                <div class="icon">
+                                                    <div class="text" align="center">
+                                                        0%
+                                                    </div>
+                                                    <div class="zhezhao">
+                                                    </div>
+                                                    <div class="bj" style="margin-top: 30px; height: 0px">
+                                                    </div>
+                                                </div>
+                                                <div class="name">
+                                                    海牙<br />
+                                                    旅游专家</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_5mouse" onmouseover="$('#single_add').slideToggle();" onmouseout="$('#single_add').slideToggle();">
+                                    </div>
+                                </div>
+                                <div class="_7">
+                                    <div class="title">
+                                    </div>
+                                    <div class="photo">
+                                    </div>
+                                    <div class="text">
+                                    &nbsp;&nbsp;双肩背包&nbsp;&nbsp;&nbsp;文化旅行图书&nbsp;&nbsp;&nbsp;纪念围巾&nbsp;&nbsp;&nbsp;&nbsp;摆桌名画
+                                    </div>
+                                    <div class="down">
+                                    还有更多好礼 <span>></span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="course" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="left">
+                                <div class="top">
+                                </div>
+                                <div class="title">
+                                </div>
+                                <div class="text">
+                                    共 12 章课程<br />
+                                    全部完成后<br />
+                                    方可获得<br />
+                                    荷兰旅游专家<br />
+                                    证书<br />
+                                    及领取礼品
+                                </div>
+                            </td>
+                            <td class="right">
+                                <div class="icon" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down" onmouseover="courseJiaoOn(this)" onmouseout="courseJiaoOff(this)">
+                                        <div class="number">
+                                            <img src="images/num_1.png" alt="" /><img src="images/num_1.png" alt="" /></div>
+                                        <table class="title" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    荷兰<br />
+                                                    皇家航空公司
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="jiao">
+                                        </div>
+                                        <div class="picture">
+                                            <img src="../../uploaddata/chapterphoto/01/01.jpg" alt="" /></div>
+                                        <div class="button" title="点击后开始学习" onclick="">
+                                            开始学习</div>
+                                        <div>
+                                            本章积分：0<br />
+                                            已完成：100%</div>
+                                        <div style="width: 100%" align="left">
+                                            <div class="roll">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon" align="center">
+                                    <div class="top2">
+                                    </div>
+                                    <div class="down" onmouseover="courseJiaoOn(this)" onmouseout="courseJiaoOff(this)">
+                                        <div class="number2">
+                                            <img src="images/num_2.png" alt="" /></div>
+                                        <table class="title" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    荷兰<br />
+                                                    皇家航空公司
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="jiao">
+                                        </div>
+                                        <div class="picture">
+                                            <img src="../../uploaddata/chapterphoto/01/01.jpg" alt="" /></div>
+                                        <div class="button2" title="点击后继续学习" onclick="">
+                                            继续学习</div>
+                                        <div>
+                                            本章积分：0<br />
+                                            已完成：100%</div>
+                                        <div style="width: 100%" align="left">
+                                            <div class="roll">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="complete" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down" onmouseover="courseButtonOn(this)" onmouseout="courseButtonOff(this)">
+                                        <div class="number">
+                                            <img src="images/num_3.png" alt="" /></div>
+                                        <table class="title" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    荷兰<br />
+                                                    皇家航空公司
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="picture">
+                                            <img src="../../uploaddata/chapterphoto/02/on.jpg" alt="" /></div>
+                                        <div class="button" title="点击后复习" onclick="">
+                                        </div>
+                                        <div>
+                                            本章积分：0<br />
+                                            已完成：100%</div>
+                                        <div class="roll">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="complete" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down" onmouseover="courseButtonOn(this)" onmouseout="courseButtonOff(this)">
+                                        <div class="number">
+                                            <img src="images/num_4.png" alt="" /></div>
+                                        <table class="title" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    荷兰<br />
+                                                    皇家航空公司
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="picture">
+                                            <img src="../../uploaddata/chapterphoto/02/on.jpg" alt="" /></div>
+                                        <div class="button" title="点击后复习" onclick="">
+                                        </div>
+                                        <div>
+                                            本章积分：0<br />
+                                            已完成：100%</div>
+                                        <div class="roll">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="none" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down">
+                                    </div>
+                                </div>
+                                <div class="none" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down">
+                                    </div>
+                                </div>
+                                <div class="none" align="center">
+                                    <div class="top">
+                                    </div>
+                                    <div class="down">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="ucenter_new" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <div class="title">
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                </div>
+                                <div class="list">
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                    <div>
+                                        <a href="javascript:;" title="荷兰大都会建筑事务所再创辉煌">荷兰大都会建筑事务所再创辉煌<span>&nbsp;&nbsp;&nbsp;&nbsp;2013-03-21</span></a></div>
+                                </div>
+                                <div class="button">
+                                    <div class="text">
+                                    </div>
+                                    <div class="next" title="更多新闻资讯" onclick="goToOpen('../../news.php')">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="app" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <div title="点击进入课程介绍" class="app1 apptopnone" style="background-image: url('/oes/uploaddata/ad/01/off.jpg')"
+                                    onclick="goTo('/oes/sub/student/htmlpage.htm')" onmouseover="changeBackground(this,'/oes/uploaddata/ad/01/on.jpg')"
+                                    onmouseout="changeBackground(this,'/oes/uploaddata/ad/01/off.jpg')">
+                                </div>
+                                <div title="向荷旅局发送E-Mail:mail@holand.com" class="app1 apptopnone" style="background-image: url('/oes/uploaddata/ad/02/off.jpg')"
+                                    onclick="goTo('mailto:conan_2011@sina.com')" onmouseover="changeBackground(this,'/oes/uploaddata/ad/02/on.jpg')"
+                                    onmouseout="changeBackground(this,'/oes/uploaddata/ad/02/off.jpg')">
+                                </div>
+                                <div title="新浪网" class="app1 apptopnone" style="background-image: url('/oes/uploaddata/ad/03/off.jpg')"
+                                    onclick="goToOpen('http://www.sina.com.cn')">
+                                </div>
+                                <div title="京东商城" class="app3 apptopnone apprightnone" style="background-image: url('/oes/uploaddata/ad/05/off.jpg')"
+                                    onclick="goToOpen('http://www.jd.com')">
+                                </div>
+                                <div title="百度" class="app2" style="background-image: url('/oes/uploaddata/ad/04/off.jpg')"
+                                    onclick="goToOpen('http://www.baidu.com')">
+                                </div>
+                                <div title="京东商城" class="app1" style="background-image: url('/oes/uploaddata/ad/05/off.jpg')"
+                                    onclick="goToOpen('http://www.jd.com')">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="firend" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="title">
+                                <img src="../../images/login_friend_title.png" alt="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="icon">
+                                <a href="http://cn.holland.com/" hidefocus="true" target="_blank" title="荷兰国家旅游会议促进局">
+                                    <img src="../../uploaddata/partners/01.jpg" alt="荷兰国家旅游会议促进局" /></a><a href="http://www.klm.com/"
+                                        hidefocus="true" target="_blank" title="荷兰国家航空公司"><img src="../../uploaddata/partners/02.jpg"
+                                            alt="荷兰国家航空公司" /></a><a href="http://www.iamsterdam.com/" hidefocus="true" target="_blank"
+                                                title="阿姆斯特丹"><img src="../../uploaddata/partners/03.jpg" alt="阿姆斯特丹" /></a><a href="http://www.schiphol.nl/"
+                                                    hidefocus="true" target="_blank" title="阿姆斯特丹史基浦机场"><img src="../../uploaddata/partners/04.jpg"
+                                                        alt="阿姆斯特丹史基浦机场" /></a><a href="http://www.bataviastad.nl/en" hidefocus="true" target="_blank"
+                                                            title="巴达维亚城市时尚奥特莱斯"><img src="../../uploaddata/partners/05.jpg" alt="巴达维亚城市时尚奥特莱斯" /></a><a
+                                                                href="http://www.gassan.com/" hidefocus="true" target="_blank" title="迦山钻石"><img
+                                                                    src="../../uploaddata/partners/06.jpg" alt="迦山钻石" /></a><a href="http://www.madurodam.nl/en/"
+                                                                        hidefocus="true" target="_blank" title="马德罗丹"><img src="../../uploaddata/partners/07.jpg"
+                                                                            alt="马德罗丹" /></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="footer" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                &nbsp;Copyright ©2013 Holland.com.cn All rights reserved 荷兰国家旅游会议促进局官方网站 版权所有 京ICP备08103525号&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <iframe id="ajax_submit_frame" name="ajax_submit_frame" width="0" height="0" marginwidth="0"
+        border="0" frameborder="0" src="about:blank"></iframe>
+    <div id="master_box_bj" style="position: absolute; background-color: Black; width: 0px;
+        height: 0px; z-index: 1999; left: 0px; top: 0px;">
+    </div>
+    <div id="master_box" style="position: absolute; z-index: 2000; left: 0px; top: 0px;">
+    </div>
+    <div id="master_box_loading" style="position: absolute; z-index: 2001; left: 0px;
+        top: 0px;">
+    </div>
+</body>
+</html>

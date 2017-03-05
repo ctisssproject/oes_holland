@@ -1,0 +1,335 @@
+﻿body /*主页背景统一样式*/
+{
+	margin: 0px;
+	line-height: 1.4;
+	font-family: 微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+	color: #000000;
+	background-color:#ffffff;
+	background-position: center;
+	height: 100%;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+input, textarea, select, button
+{
+	color: #444;
+	font: 12px/1.6em Verdana,Helvetica,Arial,sans-serif;
+}
+input, select, button
+{
+	vertical-align: middle;
+	color: #444;
+}
+form
+{
+	padding: 0px;
+	margin: 0px;
+}
+div
+{
+	overflow:hidden;
+
+}
+a
+{
+	text-decoration: none;
+	color: #333333;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a img
+{
+	border: none;
+}
+img
+{
+	border: none;
+	width:100%;
+}
+.top
+{
+	
+	}
+.see_all_travel
+{
+	text-align:center;
+	position:absolute;
+	width:100%;
+	margin-top:-23%;
+	font-size:20px;
+	color:#ffffff;
+	height:auto;
+	overflow:inherit;
+	z-index:99999;
+	}
+.travel_number
+{
+	text-align:center;
+	position:absolute;
+	width:100%;
+	margin-top:-11%;
+	font-size:20px;
+	color:#ffffff;
+	}
+.travel_title
+{
+	text-align:center;
+	padding:15px;
+	}
+.travel_title div
+{
+	text-align:center;
+	font-size:22px;
+	width:100%;
+	}
+.travel_content
+{
+	padding:25px;
+	font-size:15px;
+	}
+.travel_content .content
+{
+	width:100%;
+	}
+.travel_content .content p
+{
+	line-height: 1.4;
+	color:#000000;
+	font-size:15px;
+	}
+.travel_content .content span
+{
+	line-height: 1.4;
+	color:#000000;
+	font-size:15px;
+	}
+img.travel_detail
+{
+	width:28%;
+	margin-left:15px;
+	}
+.travel_day
+{
+	
+	}
+.travel_day .day_title
+{
+	height:45px;
+	}
+.travel_day .day_title img
+{
+	width:45px;
+	height:45px;
+	margin-left:15px;
+	float:left;
+	}
+.travel_day .day_title div
+{
+	float:left;
+	font-size:35px;
+	line-height:inherit;
+	margin-left:10px;
+	}
+.day1
+{
+	background-color:#FFFBC7;
+	}
+.day1 .day_title div
+{
+	color:#F08300;
+	}
+.day2
+{
+	background-color:#e1fda7;
+	}
+.day2 .day_title div
+{
+	color:#8fc31f;
+	}
+.day3
+{
+	background-color:#9dd8f9;
+	}
+.day3 .day_title div
+{
+	color:#38a1db;
+	}
+.day4
+{
+	background-color:#e1a1fc;
+	}
+.day4 .day_title div
+{
+	color:#7f2ba2;
+	}
+.day5
+{
+	background-color:#fdb3ba;
+	}
+.day5 .day_title div
+{
+	color:#c81528;
+	}
+.day6
+{
+	background-color:#ffeda7;
+	}
+.day6 .day_title div
+{
+	color:#c09b0f;
+	}
+.day7
+{
+	background-color:#c7fcd4;
+	}
+.day7 .day_title div
+{
+	color:#41b25d;
+	}
+.footer
+{
+	width:100%;
+	background-color:#ef7b00;
+	text-align:center;
+	padding-bottom:25px;
+	}
+.footer .code
+{
+	padding-top:20px;
+	padding-bottom:15px;
+	
+	}
+.footer .code img
+{
+	width:100px;
+	height:100px;
+	}
+.footer .footer_text
+{
+	font-size:12px;
+	color:White;
+	}
+.footer .share
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:30%
+	}
+.footer .share img
+{
+	float:left;
+	margin:5px;
+	width:32px;
+	height:32px;
+	}
+.travel_setp
+{
+	padding:25px;
+	font-size:15px;
+	padding-bottom:0px;
+	}
+.travel_setp div
+{
+	float:left;
+	width:18%;
+	font-size:15px;
+	}
+.travel_setp .name
+{
+	width:80%;
+	font-size:15px;
+	}
+.travel_setp .click
+{
+	color:#f08300;
+	text-decoration:underline;
+	font-weight:bold;
+	}
+.travel_setp .explain
+{
+	color:#5e5e5e;
+	font-style: italic;
+	}
+.region .region_content
+{
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	overflow: hidden;
+	vertical-align: inherit;
+	text-align: left;
+	padding:25px;
+		}
+.region
+{
+	display:none;
+	margin-top:20px;
+	padding-bottom:20px;
+	}
+.region .tips
+{
+	font-size:12px;
+	text-align:center;
+	}
+.region .region_content td
+{
+	vertical-align: top;
+}
+.region .region_content td p
+{
+	vertical-align: inherit;
+}
+.region .region_contact
+{
+	font-size:14px;
+	padding:25px;
+	padding-top:0px;
+	line-height:25px;
+}
+.region .region_contact img
+{
+	width:auto;
+}
+.box
+{
+	display:none;
+	}
+.box .close
+{
+	padding:10px;
+	text-align:center;
+	}
+.box .close img
+{
+	width:60px;
+	}
+.go_top
+{
+	width:45px;
+	height:45px;
+	position:fixed;
+	margin-top:450px;
+	margin-left:265px;
+	}
+.menu
+{
+	background-color:#7F2BA2;
+	position:absolute;
+	width:100%;
+	display:none;
+		
+	}
+.menu div
+{
+	text-align:left;
+	margin:10px;
+	color:#ffffff;
+	margin-left:20px;
+	font-size:16px;
+
+	}

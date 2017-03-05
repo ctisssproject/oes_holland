@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>荷兰旅游专家-个人中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/ucenter.css" />
+
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../../js/common.fun.js"></script>
+
+    <script type="text/javascript" src="../../js/dialog.fun.js"></script>
+
+    <script type="text/javascript" src="js/common.fun.js"></script>
+
+    <script type="text/javascript" src="js/submit.fun.js"></script>
+
+    <script type="text/javascript" src="../../js/login.fun.js"></script>
+
+    <script type="text/javascript">
+	var N_Time=60;
+	$(window).load(function(){
+		examStartTime();
+		//parent.scrollTo(0,100000)		
+		setTimeout('$("#subject_0").show()',1000);
+		setTimeout('parent.Common_CloseDialog();',1000);
+		});
+	var N_Second=0;
+	var ExamTimeHandle=0;
+    </script>
+
+</head>
+<body style="background-image: none">
+    <form method="post" id="submit_form" action="include/bn_submit.svr.php?function=ExamSubmit"
+    enctype="multipart/form-data" target="ajax_submit_frame" style="width: 100%" onsubmit="this.submit();parent.Common_OpenLoading();">
+    <div class="exam_title">
+        <div class="text">
+            测试中...</div>
+        <div id="time">
+        </div>
+    </div>
+    <div id="subject">
+        <div id="number" class="text" align="center">
+            问题 2</div>
+        <div id="subject_0" style="display: none">
+            <div class="title">
+                荷兰帝国崛起的故事，犹如郁金香花开般绚丽多彩，那么以下哪些是其真正获得经济成就的最早动力？
+            </div>
+            <div class="item">
+                <div class="option">
+                    <div>
+                        <input type="radio" name="Vcl_Item_2" value="5" /></div>
+                    <div>
+                        A .</div>
+                    <div class="text2">
+                        投机泡沫的郁金香，一个专用词——“郁金香狂潮”（Tulipmania）</div>
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="radio" name="Vcl_Item_2" value="5" /></div>
+                    <div>
+                        A .</div>
+                    <div class="text2">
+                        投机泡沫的郁金香一个专用词——“郁金香狂潮”（Tulipmania）</div>
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="radio" name="Vcl_Item_2" value="5" /></div>
+                    <div>
+                        A .</div>
+                    <div class="text2">
+                        投机泡沫的郁金香，一个专用词——“郁金香狂潮”（Tulipmania）</div>
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="radio" name="Vcl_Item_2" value="5" /></div>
+                    <div>
+                        A .</div>
+                    <div class="text2">
+                        投机泡沫的郁金香，一个专用词——“郁金香狂潮”（Tulipmania）</div>
+                </div>
+            </div>
+            <div class="button">
+                <div align="center" onclick="examExitSubject(0)">
+                    下一题</div>
+                <div class="submit" align="center" onclick="examExitSubject(0)">
+                    交卷</div>
+            </div>
+        </div>
+        <div id="subject_1" style="display: none">
+            通过学习，获得“荷兰旅游专家”的称号的同时，还有以下哪些奖励：<div>
+                <div>
+                    <input type="radio" name="Vcl_Item_3" value="8" />&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;荷兰国家旅游会议促进局授予的荷兰旅游专家证书
+                </div>
+                <div>
+                    <input type="radio" name="Vcl_Item_3" value="9" />&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;用获得的积分去兑换荷兰纪念礼品
+                </div>
+                <div>
+                    <input type="radio" name="Vcl_Item_3" value="10" />&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;以上都是
+                </div>
+            </div>
+            <div>
+                <div onclick="examPrevSubject(1)">
+                    上一题</div>
+                <div onclick="examExitSubject(1)">
+                    下一题</div>
+            </div>
+        </div>
+        <div id="subject_2" style="display: none">
+            对于荷兰的描述， 哪些是正确的？
+            <div>
+                <div>
+                    <input type="radio" name="Vcl_Item_6" value="18" />&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;全世界最早实施“安乐死”的国家
+                </div>
+                <div>
+                    <input type="radio" name="Vcl_Item_6" value="19" />&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;全世界最早出现的资本银行
+                    — 荷兰银行
+                </div>
+                <div>
+                    <input type="radio" name="Vcl_Item_6" value="20" />&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;全世界最早的资产阶级共和制国家
+                </div>
+                <div>
+                    <input type="radio" name="Vcl_Item_6" value="21" />&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;以上全对
+                </div>
+            </div>
+            <div>
+                <div onclick="examPrevSubject(2)">
+                    上一题</div>
+                <div onclick="examSubmit()">
+                    交卷</div>
+            </div>
+        </div>
+        <input type="hidden" name="Vcl_SubjectId" value="<1>2<1>3<1>6">
+    </div>
+    </form>
+    <iframe id="ajax_submit_frame" name="ajax_submit_frame" width="0" height="0" marginwidth="0"
+        border="0" frameborder="0" src="about:blank"></iframe>
+</body>
+</html>

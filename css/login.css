@@ -1,0 +1,227 @@
+﻿body
+{
+	font-family:微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+	}
+.login .left
+{
+	width: 711px;
+	padding-right: 18px;
+}
+.login .left iframe
+{
+	width: 100%;
+	height: 322px;
+}
+.login .right
+{
+	background-color: #EBE9DF;
+	vertical-align: top;
+}
+.login .right div
+{
+	width: 100%;
+}
+.login .right .title1
+{
+	height: 50px;
+	width: 172px;
+	background-color: #ff6f00;
+}
+.login .right .title1 img
+{
+	margin: 17px 0px 0px 27px;
+}
+.login .right .title2
+{
+	background-color: #d35400;
+	background-image: url(    '../images/login_title2.png' );
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-color:#d35400;
+	
+}
+.login .right .jiao
+{
+	height: 24px;
+	background: url(    '../images/login_jiao01.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.login .right .input
+{
+	padding:0px 13px 13px 13px;
+}
+.login .right .input table
+{
+	height:51px;
+	background-color:White;
+}
+.login .right .input table .text
+{
+	width:160px;
+	vertical-align:middle;
+}
+.login .right .input table .icon
+{
+
+	background-image: url('../images/login_username_icon.png' );
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.login .right .input table input
+{
+	margin-left:16px;
+	border:0px;
+	height:24px;
+	width:140px;
+	font-size:14px;
+	background-image: url('../images/login_username_text.png' );
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.login .right .input table .pass
+{
+	background-image: url('../images/login_password_icon.png' );
+}
+.login .right .input table .textpass input
+{
+	background-image: url(    '../images/login_password_text.png' );
+}
+.login .right .button
+{
+	padding:0px 13px 0px 13px;
+	}
+.login .right .button div
+{
+	height:50px;
+	width:100%;
+	background-color:#8d897f;
+	background-image: url(    '../images/login_submit.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor:pointer;
+}
+.login .right .button input
+{
+	border:0px;
+	width:0px;
+	height:0px;
+	background-color:#8d897f;
+}
+.login .right .button div:hover
+{
+	background-color:#ff6f00;
+}
+.login .right .button2
+{
+	padding:23px 18px 0px 18px;
+	}
+.login .right div.findpass
+{
+	float:left;
+	width:89px;
+	height:30px;
+	background-image: url(    '../images/login_findpass_off.png' );
+	background-repeat: no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+}
+.login .right div.findpass:hover
+{
+	background-image: url(    '../images/login_findpass_on.png' );
+}
+.login .right div.reg
+{
+	float:right;
+	width:82px;
+	height:30px;
+	background-image: url(    '../images/login_reg_off.png' );
+	background-repeat: no-repeat;
+	overflow:hidden;
+	cursor:pointer;
+}
+.login .right div.reg:hover
+{
+	background-image: url(    '../images/login_reg_on.png' );
+	}
+/*--------------广告模版--------------------*/
+.app
+{
+	margin-top:18px;
+	overflow:hidden;
+	}
+.app .left
+{
+	width: 729px;
+}
+.app .right
+{
+	background-color:#D3E7EE;
+}
+.app .left div.app1
+{
+	cursor:pointer;
+	float:left;
+	height:147px;
+	width:225px;
+	background-color:#EBE9DF;
+	margin-right:18px;
+	margin-top:18px;
+}
+.app .left div.app2
+{
+	cursor:pointer;
+	float:left;
+	height:147px;
+	width:468px;
+	background-color:#EBE9DF;
+	margin-right:18px;
+	margin-top:18px;
+}
+.app .left div.apptopnone
+{
+	margin-top:0px;
+	}
+.app .right .title1
+{
+	height: 50px;
+	width: 172px;
+	background-color: #54c3f1;
+}
+.app .right .title1 img
+{
+	margin: 17px 0px 0px 27px;
+}
+.app .right .title2
+{
+	cursor:pointer;
+	background-color: #1b9ed4;
+	background-image: url(    '../images/app_new_title2.png' );
+}
+.app .right .title2:hover
+{
+	background-color: #54c3f1;
+}
+.app .right .jiao
+{
+	height: 22px;
+	background: url(    '../images/app_jiao01.png' );
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.app .right .list
+{
+	cursor:pointer;
+	padding-left:57px;
+	padding-right:54px;
+	padding-bottom:10px;
+	color:#8d897f;
+	background-image: url(    '../images/new_list_off.png' );
+	background-position:  left 3px;
+	background-repeat:no-repeat;
+}
+.app .right .list:hover
+{
+	color:#2980b9;
+	background-image: url(    '../images/new_list_on.png' );
+}

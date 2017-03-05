@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>兑换奖品</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="Stylesheet" href="css/holland_6.css" />
+    <link type="text/css" rel="Stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        function set_w() {
+            var win_w = $(window).width(),
+                w = win_w * 0.94 - 104;
+                //t_h = $(".title").height(),
+                //gift_h = $(".gift_title").height(),
+                //h =t_h + gift_h+20;
+
+            $(".list_box_info , .info_bottom").css("width", w);
+            //$(".record_info").css("top", h);
+        }
+        $(function () {
+            set_w();
+        });
+        $(window).on('orientationchange', function () {
+            set_w();
+        });
+        function show_record() {
+            var dis = $(".record_info").css("display");
+            $(".record_info").slideToggle(500);
+            if (dis == "none") {
+                $(".record_button").text("收起");
+            } else {
+                $(".record_button").text("积分记录");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="page_box">
+        <div class="title">
+            <img alt="" class="title_l" src="images/logo-full.png" />
+            <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+        </div>
+        <div class="gift_title">
+            <div class="title_icon">
+                <span class="icon-back bg_brown"></span>
+                <h1>兑换奖品</h1>
+            </div>
+            <div class="right_triangle"></div>
+            <h2>可用积分: <span>41</span> 分</h2>
+            <div class="record_button" onclick="show_record()">
+                积分记录
+            </div>
+        </div>
+
+        <div class="record_info">
+            <div class="record_top_triangle"></div>
+            <table border="0" cellpadding="0" cellspacing="0" class="row">
+                <tr class="first_tr">
+                    <td>日期</td>
+                    <td>获得积分</td>
+                    <td>使用积分</td>
+                    <td>余额</td>
+                    <td class="explain" style="text-align:center !important;">说明</td>
+                </tr>
+                <tr class="bg_tr1">
+                    <td>2014<br />08-11</td>
+                    <td>+5</td>
+                    <td></td>
+                    <td>5</td>
+                    <td class="explain">完成课程《荷航的行李规定和特别餐食》获得积分</td>
+                </tr>
+                <tr class="bg_tr2">
+                    <td>2014<br />08-12</td>
+                    <td>+5</td>
+                    <td></td>
+                    <td>10</td>
+                    <td class="explain">完成课程《荷航舱位设计》获得积分</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="list_box">
+            <img alt="" src="images/off1.jpg" />
+            <div class="list_box_info">
+                <h1>双肩背书包</h1>
+                <p>规格：45*25cm</p>
+                <p>颜色：橙、黑（随机发放）</p>
+            </div>
+            <div class="info_bottom">
+                <p>所需积分 <span>318</span></p>
+                <div class="list_box_but">
+                    马上兑换
+                </div>
+            </div>
+        </div>
+        <div class="list_box">
+            <img alt="" src="images/off1.jpg" />
+            <div class="list_box_info">
+                <h1>郁金香花种球</h1>
+                <p>规格：8*8cm</p>
+                <p>颜色：橙、黄白色、白绿色</p>
+            </div>
+            <div class="info_bottom">
+                <p>所需积分 <span>318</span></p>
+                <div class="list_box_but">
+                    马上兑换
+                </div>
+            </div>
+        </div>
+        <div class="list_box">
+            <img alt="" src="images/off1.jpg" />
+            <div class="list_box_info">
+                <h1>荷兰绘画大师著作赏鉴本</h1>
+                <p>规格：23*18cm</p>
+                <p>颜色：蓝色</p>
+            </div>
+            <div class="info_bottom">
+                <p>所需积分 <span>161</span></p>
+                <div class="list_box_but over_but">
+                    兑换结束
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

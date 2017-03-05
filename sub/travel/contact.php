@@ -1,0 +1,143 @@
+<?php
+define ( 'RELATIVITY_PATH', '' ); //定义相对路径
+header ( 'Cache-Control: no-cache' );
+header ( 'Pragma: no-cache' );
+header ( 'Expires: Thu, 01 Jan 1970 00:00:00 GMT' );
+header ( 'Last-Modified:' . gmdate ( 'D, d M Y H:i:s' ) . ' GMT' );
+header ( 'content-type:text/html; charset=utf-8' );
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>荷兰行程网-联系我们</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+
+    <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script src="js/register.fun.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td style="width: 986px">
+                <div style="width: 986px; height: 135px; text-align: center;">
+                    <img style="padding-top: 44px;" alt="" src="images/logo_1.png" />
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr style="background-color: #50BAD0">
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <div style="width: 986px; height: 47px;">
+                    <div class="logo" style="margin-left: 408px;" onclick="location='index.php'">
+                    </div>
+                </div>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <div style="width: 986px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="margin: 70px 0px 0px 140px;
+                        width: 707px;">
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" id="form" style="width: 600px">
+                                    <tr>
+                                        <td style="padding:50px;">
+                                            <p>
+                                                <strong><span style="font-size: 16px;">荷兰国家旅游会议促进局网站 </span></strong>
+                                            </p>
+                                            <p>
+                                                <br />
+                                                <a style="font-size: 14px; text-decoration: underline;" href="http://www.holland.com"
+                                                    target="_blank" textvalue="www.holland.com"><span style="font-size: 14px;">www.holland.com</span></a><span
+                                                        style="font-size: 14px;"> </span>
+                                            </p>
+                                            <p>
+                                                <br />
+                                                <strong><span style="font-size: 16px;">联系方式</span></strong></p>
+                                            <p>
+                                                <span style="font-size: 14px;">
+                                                    <br />
+                                                    北京代表处
+                                                    <br />
+                                                    北京市光华东里8号院中海广场南楼1603室邮编：100020
+                                                    <br />
+                                                    邮箱：</span><a style="font-size: 14px; text-decoration: underline;" href="mailto:PM-NBTC-INFO-CN@holland.com"><span
+                                                        style="font-size: 14px;">PM-NBTC-INFO-CN@holland.com</span></a><span style="font-size: 14px;">
+                                                            &nbsp;<br />
+                                                            (如您在学习过程中，遇见问题，请发邮件联系我们） </span>
+                                            </p>
+                                            <p>
+                                                <strong><span style="font-size: 16px;"></span></strong>
+                                            </p>
+                                            <p>
+                                                &nbsp;<br />
+                                                <strong><span style="font-size: 16px;">订阅荷兰最新旅游资讯</span></strong><span style="font-size: 14px;"><br />
+                                                    <br />
+                                                    欢迎订阅最新荷兰旅游资讯，请发邮件至</span><a style="font-size: 14px; text-decoration: underline;"
+                                                        href="mailto:PM-NBTC-INFO-CN@holland.com"><span style="font-size: 14px;">PM-NBTC-INFO-CN@holland.com</span></a><br />
+                                                <span style="font-size: 14px;">
+                                                    <br />
+                                                    &nbsp;<br />
+                                                    <strong><span style="font-size: 16px;">随时随地关注荷兰资讯</span></strong><br />
+                                                    <br />
+                                                    关注荷兰在新浪微博上 @荷兰旅游局官方微博 &nbsp;@荷兰旅游专家</span></p>
+                                            <p>
+                                                <span style="font-size: 14px;"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <div style="width: 986px;">
+                    <div class="button_2" style="float: right; margin-right: 220px" onclick="history.go(-1)">
+                        返回</div>
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <div style="height: 100px">
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

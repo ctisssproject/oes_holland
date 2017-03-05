@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>个人中心</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="Stylesheet" media="screen and (max-width:374px)" href="css/holland_5.css" />
+    <link type="text/css" rel="Stylesheet" media="screen and (min-width:375px)" href="css/holland_6.css" />
+    <link type="text/css" rel="Stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+    <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+    <script type="text/javascript">
+        function set_w() {
+            var win_w = $(window).width(),
+                w = win_w * 0.94,
+                div_w = w - 76,
+                five_w = w - 130,
+                six_w = w - 140;
+            if (win_w < 374) {
+                $(".persnol_title h3").css("width", five_w);
+                $(".lesson_content").css("width", five_w);
+            } else {
+                $(".persnol_title h3").css("width", six_w);
+                $(".lesson_content").css("width", six_w);
+            }
+            $(".experts_info").css("width", div_w);
+        }
+        $(function () {
+            set_w();
+        });
+        $(window).on('orientationchange', function () {
+            set_w();
+        });
+        $(document).ready(function () {
+            $('#myStat').circliful();
+        });
+    </script>
+</head>
+<body>
+    <div class="page_box">
+        <div class="title">
+            <img alt="" class="title_l" src="images/logo-full.png" />
+            <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+        </div>
+        <div class="persnol_title">
+            <div class="title_icon">
+                <span class="icon-user"></span>
+                <h1>个人中心</h1>
+            </div>
+            <div class="right_triangle"></div>
+            <div class="per_num">
+                <h1>当前注册:</h1>
+                <h2>5395人</h2>
+            </div>
+            <div class="per_num">
+                <h1>专家称号:</h1>
+                <h2>2848人</h2>
+            </div>
+            <div class="per_num">
+                <h1>我的排名:</h1>
+                <h2>2849人</h2>
+            </div>
+        </div>
+        <div class="persnol_box">
+            <div class="persnol_name">
+                <h1>赵蕊蕊</h1>
+                <div class="log_out">
+                    <span class="icon-logout"></span>
+                    <h2>退出</h2>
+                </div>
+            </div>
+        </div>
+        <div class="top_triangle top_tri_position"></div>
+        <div class="persnol_info">
+            <div class="row">
+                <div class="persnol_photo">
+                    <img alt="" src="images/clear.png" />
+                </div>
+                <div class="persnol_info_but">
+                    <div class="info_but">
+                        <span class="icon-idcard"></span>
+                        <h1>个人信息</h1>
+                    </div>
+                    <div class="info_but m_t_4">
+                        <span class="icon-lock"></span>
+                        <h1>修改密码</h1>
+                    </div>
+                </div>
+                <div class="percent_box">
+                    <h1>完成度</h1>
+                    <div class="partner_div">
+                        <!-- data-dimension控制div的宽高  data-percent需要的百分比 data-text中心的文字显示  data-fontsize文字大小  data-width线条宽度 -->
+                        <div id="myStat" data-dimension="40" data-text="56%" data-percent="56" data-width="1" data-fontsize="10" data-border="inline" data-fgcolor="#ff6100" data-bgcolor="#ebe9df" data-fill="#fff"></div>
+                    </div>
+                </div>
+                <div class="integral_box">
+                    <h1>当前积分</h1>
+                    <h2>42</h2>
+                </div>
+                <div class="persnol_blue_but">
+                    <div class="blue_but">
+                        <span class="icon-gift"></span>
+                        <h1>兑换奖品</h1>
+                    </div>
+                    <div class="blue_but m_t_8">
+                        <span class="icon-doc"></span>
+                        <h1>领取资料</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row m_t_8">
+                <div class="experts">
+                    <h1>单项专家</h1>
+                </div>
+                <div class="experts_info">
+                    <div class="row">
+                        <span class="icon-master op_10"></span><!-- op_1到op_10控制图标透明度 -->
+                        <h1>库肯霍夫旅游专家</h1>
+                        <h2 class="complete">100%</h2><!-- 类complete控制100%的文字颜色 -->
+                    </div>
+                    <div class="row">
+                        <span class="icon-master op_6"></span>
+                        <h1>乌特勒支旅游专家</h1>
+                        <h2>60%</h2>
+                    </div>
+                    <div class="row">
+                        <span class="icon-master op_3"></span>
+                        <h1>鹿特丹旅游专家</h1>
+                        <h2>30%</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gift_box">
+            <img alt="" src="images/img.png" />
+        </div>
+        <div class="persnol_title">
+            <div class="title_icon">
+                <span class="icon-notepad bg_brown"></span>
+                <h1>课程学习</h1>
+            </div>
+            <div class="right_triangle"></div>
+            <h3>共10章，全部完成即可获得“荷兰旅游专家”证书及领取礼品</h3>
+        </div>
+        <div class="lesson_box">
+            <div class="lesson_num">1</div>
+            <div class="lesson_img">
+                <img alt="" src="images/off2.jpg" />
+            </div>
+            <div class="lesson_content">
+                <h1>荷兰，那些不可错过的地方</h1>
+
+
+                <div class="lesson_m_bottom"></div><!-- 下边两个元素是绝对定位的，此DIV是撑高度使用 -->
+                <h2>已获积分:20 &nbsp; <span>已完成</span></h2>
+                <div class="lesson_progress">
+                    <div class="progress_div" style="width:100%;"></div><!-- 直接控制progress_div的宽度百分比就可以控制进度条 -->
+                </div>
+            </div>
+        </div>
+        <div class="lesson_box inporcess">
+            <div class="lesson_num">2</div>
+            <div class="lesson_img">
+                <img alt="" src="images/off3.jpg" />
+            </div>
+            <div class="lesson_content">
+                <h1>荷兰，那些不可错过的地方</h1>
+                <h3>学习中</h3>
+
+
+                <div class="lesson_m_bottom"></div><!-- 下边两个元素是绝对定位的，此DIV是撑高度使用 -->
+                <h2>已获积分:10 &nbsp; 完成:50%</h2>
+                <div class="lesson_progress">
+                    <div class="progress_div" style="width:50%;"></div><!-- 直接控制progress_div的宽度百分比就可以控制进度条 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

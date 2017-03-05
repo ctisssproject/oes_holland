@@ -1,0 +1,106 @@
+﻿body 
+{
+	background-image:none;
+	font-family:微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+}
+table
+{
+	width:240px;
+	}
+table .title
+{
+	color:#FF7000;
+	font-weight:bold;
+	font-size:14px;
+	padding-bottom:20px;
+	}
+table .text
+{
+	}
+table .text .input_no
+{
+	float: right;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-image: url('../../../images/reg_error.png' );
+	padding-right: 20px;
+	color: #2A80B9;
+	display:none;
+}
+table .text div.input_ok
+{
+	float: right;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url( '../../../images/reg_seccuss.png' );
+	width: 16px;
+	height: 16px;
+	display:none;
+}
+table .vcl textarea
+{
+	border: 1px solid #BFBDB7;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #D35400;
+	font-family: 宋体;
+	line-height: normal;
+	width: 240px;
+	font-size: 14px;
+	padding: 9px 5px 8px 5px;
+}
+table .vcl input
+{
+	border: 1px solid #BFBDB7;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #D35400;
+	font-family: 宋体;
+	line-height: normal;
+	width: 240px;
+	font-size: 14px;
+	padding: 9px 5px 8px 5px;
+}
+table .vcl input.mini
+{
+	width: 100px;
+}
+table .alt
+{
+	color:#2A80B9;
+	padding-bottom:20px;
+}
+table .vcl input.on
+{
+	border-color:#FF7000;
+}
+table .vcl input.off
+{
+	border: 1px solid #BFBDB7;
+}
+table .button div
+{
+	float: right;
+	margin-left: 12px;
+	height: 24px;
+	width: 55px;
+	background-color: #7d7d7d;
+	background-image: url(  '../../../images/box_cancel.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+table .button div:hover
+{
+	background-color: #585757;
+}
+table .button .ok
+{
+	background-color: #ff6f00;
+	background-image: url(  '../../../images/box_ok.png' );
+	display: block;
+}
+table .button .ok:hover
+{
+	background-color:#D35400;
+}

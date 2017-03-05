@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>联系我们</title>
+    <link type="text/css" rel="Stylesheet" href="css/publick.css" />
+    <link type="text/css" rel="Stylesheet" href="css/holland_6.css" />
+    <link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        function set_w() {
+            var win_w = $(".page_box").width(),
+                
+            i_six_w = Math.round(win_w * 0.94 * 0.23),
+                six_m_t = (i_six_w - 60) / 2,
+                six_bor = i_six_w / 2 + "px",
+                i_six_p = win_w * 0.94 * 0.67 * 0.48,
+                six_klm_img_h = i_six_p + 10 + "px";
+            
+                $(".but_div").css("height", i_six_w);
+                $(".lesson_info span , .contact_us span").css("margin-top", six_m_t);
+                $(".login_sign_bg , .weixin_weibo_bg").css("border-width", six_bor);
+                $(".login_sign_box , .weixin_weibo_box").css("margin-top", -i_six_w);
+                $(".login_div , .weibo_div").css({ "width": six_bor, "height": six_bor });
+                $(".sign_div , .weixin_div").css({ "width": six_bor, "height": six_bor, "margin-left": six_bor });
+                $(".klm_img").css("height", six_klm_img_h);
+                $(".amsterdam_img , .klm_bottom , .cjj_div , .air_div").css("height", i_six_p);
+        }
+        $(function () {
+            set_w();
+        });
+        $(window).on('orientationchange', function () {
+            location.reload();
+        });
+    </script>
+</head>
+<body>
+     <div class="page_box">
+        <div class="title">
+            <img alt="" class="title_l" src="images/logo-full.png" />
+            <img alt="" class="title_r" src="images/logo-Alliance-China.png" />
+        </div>
+        <div class="news_list_title">
+            <div class="list_title_icon">
+                <span class="icon-mail"></span>
+                <h1>联系我们</h1>
+            </div>
+            <div class="right_triangle"></div>
+            <h2>欢迎您来到荷兰旅游专家</h2>
+        </div>
+        <div class="contact_box_info">
+            <h1>荷兰国家旅游会议促进局网站</h1>
+            <a href="http://www.holland.com">www.holland.com</a>
+            <h1>联系方式</h1>
+            <p>北京代表处</p>
+            <p>邮箱：<a>admin@holland.com</a></p>
+            <h1>随时随地关注荷兰资讯</h1>
+            <p>在新浪微博上关注荷兰<span>@荷兰旅游局官方微博</span></p>
+        </div>
+
+
+        <div class="partner_box">
+            <div class="klm_div">
+                <img class="klm_img" alt="" src="images/off1.jpg" />
+                <div class="klm_bottom">
+                    <img class="klm_logo" alt="" src="images/logo-klm.png" />
+                    <h1>荷兰皇家航空公司</h1>
+                </div>
+            </div>
+            <div class="cjj_airport_div">
+                <div class="partner cjj_div">
+                    <img alt="" src="images/off2.jpg" />
+                    <h1>荷兰国家旅游<br />会议促进局</h1>
+                </div>
+                <div class="partner air_div">
+                    <img alt="" src="images/off3.jpg" />
+                    <h1>阿姆斯特丹<br />史基浦机场</h1>
+                </div>
+                
+                <div class="amsterdam_div">
+                    <img class="amsterdam_img" alt="" src="images/off5.jpg" />
+                    <div class="amsterdam_botttom">
+                        <img alt="" src="images/logo-iamsterdam.png" />
+                        <h1>阿姆斯特丹市</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cooperative_brand">
+            <div class="brand_box">
+                <img alt="" src="images/logo-maastricht.png" />
+                <img alt="" src="images/logo-madurodam.png" />
+                <img alt="" src="images/logo-rotterdam.png" />
+            </div>
+        </div>
+        <div class="page_bottom">
+            <h1>Copyright©2013 Holland.com.cn Allrights reserved<br />荷兰国家旅游会议促进局官方网站 版权所有</h1>
+        </div>
+    </div>
+</body>
+</html>

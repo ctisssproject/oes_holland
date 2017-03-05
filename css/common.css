@@ -1,0 +1,617 @@
+﻿body /*主页背景统一样式*/
+{
+	margin: 0px;
+	line-height: 1.3;
+	font-size: 12px;
+	font-family: 微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+	color: #000000;
+	background-image: url('../images/bj.jpg' );
+	background-position: center;
+	height: 100%;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+input, textarea, select, button
+{
+	color: #444;
+	font: 12px/1.6em Verdana,Helvetica,Arial,sans-serif;
+}
+input, select, button
+{
+	vertical-align: middle;
+	color: #444;
+}
+form
+{
+	padding: 0px;
+	margin: 0px;
+}
+div
+{
+
+}
+a
+{
+	text-decoration: none;
+	color: #333333;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a img
+{
+	border: none;
+}
+img
+{
+	border: none;
+}
+.main
+{
+	width: 986px;
+	background-color: White;
+}
+.main td.center
+{
+	padding-left: 18px;
+	padding-right: 18px;
+}
+.main table
+{
+	width: 100%;
+}
+.main .logo
+{
+	margin: 45px 0px 22px 0px;
+}
+.main .logo .left
+{
+	text-align: left;
+	padding-left: 5px;
+}
+.main .logo .right
+{
+	width: 400px;
+	padding-top:0px;
+}
+.main .logo .right div.top_nav
+{
+    cursor:pointer;
+    position:absolute;
+    margin-top:-35px;
+}
+.main .logo .right div.top_nav:hover
+{
+    color:#FF6600;
+}
+.main .logo .right img
+{
+	float: right;
+}
+.main .footer
+{
+	margin: 50px 0px 50px 0px;
+}
+.main .footer td
+{
+	padding-bottom: 18px;
+	color: #858585;
+	border-bottom: 1px solid #ECF0F1;
+}
+.main .footer .weibo
+{
+	width:90px;
+
+}
+.main .footer .icon
+{
+	float:left;
+	margin-right:4px;
+	margin-top:5px;
+}
+.main .footer .button
+{
+	margin-top:5px;
+	float:left;
+}
+.main .footer .weixin
+{
+	width:90px;
+	color:#333333;
+}
+.main .footer .text
+{
+
+}
+table tr td
+{
+	text-align: left;
+	vertical-align: top;
+}
+/*--------------系统提示--------------------*/
+.box
+{
+	width: 290px;
+	overflow: hidden;
+	padding: 21px 25px 21px 20px;
+	background-color: White;
+}
+.box .icon
+{
+	background-repeat: no-repeat;
+	height: 42px;
+	width: 47px;
+}
+.box .title
+{
+	padding-top: 4px;
+}
+.box .title .background
+{
+	width: 100%;
+	height: 38px;
+	background-image: url(  '../images/bj.jpg' );
+}
+.box .title .background div
+{
+	width: 100%;
+	height: 38px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.box .content
+{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	color: #333333;
+	line-height: 1.5;
+}
+.box .button div
+{
+	float: right;
+	margin-left: 12px;
+	height: 24px;
+	width: 55px;
+	background-color: #7d7d7d;
+	background-image: url(  '../images/box_cancel.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.box .button div:hover
+{
+	background-color: #585757;
+}
+.box table
+{
+	width: 100%;
+}
+/*--------------确认提示--------------------*/
+.box_confirm
+{
+	border: 4px solid #9b59b6;
+}
+.box_confirm .icon
+{
+	background-image: url(  '../images/box_icon_confirm.png' );
+	background-position: 5px center;
+}
+.box_confirm .title .background div
+{
+	background-image: url(  '../images/box_title_confirm.png' );
+}
+.box_confirm .button .ok
+{
+	background-color: #9b59b6;
+	background-image: url(  '../images/box_ok.png' );
+}
+.box_confirm .button .ok:hover
+{
+	background-color: #7d3e97;
+}
+/*--------------系统提示--------------------*/
+.box_message
+{
+	border: 4px solid #9b59b6;
+}
+.box_message .icon
+{
+	background-image: url(  '../images/box_icon_confirm.png' );
+	background-position: 5px center;
+}
+.box_message .title .background div
+{
+	background-image: url(  '../images/box_title_confirm.png' );
+}
+.box_message .button div
+{
+	display: none;
+}
+.box_message .button .ok
+{
+	background-color: #9b59b6;
+	background-image: url(  '../images/box_ok.png' );
+	display: block;
+}
+.box_message .button .ok:hover
+{
+	background-color: #7d3e97;
+}
+/*--------------成功提示--------------------*/
+.box_success
+{
+	border: 4px solid #ff6f00;
+}
+.box_success .icon
+{
+	background-image: url(  '../images/box_icon_ok.png' );
+	background-position: left center;
+	width: 55px;
+}
+.box_success .title .background div
+{
+	background-image: url(  '../images/box_title_ok.png' );
+}
+.box_success .button div
+{
+	display: none;
+}
+.box_success .button .ok
+{
+	background-color: #ff6f00;
+	background-image: url(  '../images/box_ok.png' );
+	display: block;
+}
+.box_success .button .ok:hover
+{
+	background-color: #D35400;
+}
+/*--------------错误提示--------------------*/
+.box_error
+{
+	border: 4px solid #2980b9;
+}
+.box_error .icon
+{
+	background-image: url(  '../images/box_icon_error.png' );
+	background-position: left center;
+}
+.box_error .title .background div
+{
+	background-image: url(  '../images/box_title_error.png' );
+}
+.box_error .button div
+{
+	display: none;
+}
+.box_error .button .ok
+{
+	background-color: #54c3f1;
+	background-image: url(  '../images/box_ok.png' );
+	display: block;
+}
+.box_error .button .ok:hover
+{
+	background-color: #1b9ed4;
+}
+/*--------------加载提示--------------------*/
+.loading
+{
+	width: 290px;
+	overflow: hidden;
+	padding: 20px 20px 20px 20px;
+	background-color: White;
+	border: 4px solid #ff6f00;
+}
+.loading .background
+{
+	width: 100%;
+	height: 37px;
+	background-image: url(  '../images/bj.jpg' );
+}
+.loading .background div
+{
+	height: 37px;
+	width: 100%;
+	background-image: url(  '../images/box_text_loading.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/*--------------对话框背景--------------------*/
+#master_box_bj
+{
+	position: absolute;
+	background-color: Black;
+	width: 0px;
+	height: 0px;
+	z-index: 1999;
+	left: 0px;
+	top: 0px;
+	display:none;
+}
+/*--------------用户中心的新闻资讯模块--------------------*/
+.ucenter_new
+{
+	margin-top:25px;
+	border-top: 1px solid #98DBF7;
+	border-bottom: 1px solid #98DBF7;
+	}
+.ucenter_new td
+{
+	padding-top:25px;
+	padding-bottom:25px;
+	}
+.ucenter_new div
+{
+	float:left;
+	height:76px;
+	}
+.ucenter_new div.title
+{
+	float:left;
+	background-image: url(  '../images/bj.jpg' );
+	width:114px;
+	margin-right:50px;
+	}
+.ucenter_new div.title div
+{
+	float:inherit;
+	margin:0px;
+	width:100%;
+	width:114px;
+	background-image: url(  '../images/ucenter_new_title.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+.ucenter_new div.list
+{
+	width:320px;
+	}
+.ucenter_new div.list div
+{
+	margin:0px;
+	float:inherit;
+	height:auto;
+	width:100%;
+	margin-top:2px;
+	margin-bottom:2px;
+	}
+.ucenter_new div.list div span
+{
+	color:#54C3F1;
+	}
+.ucenter_new div.list div a
+{
+	color:#7D7D7D;
+	}
+.ucenter_new div.list div a:hover
+{
+	color:#333333;
+	}
+.ucenter_new div.button
+{
+	float:right;
+	height:26px;
+	width:96px;
+	margin:0px;
+	margin-top:50px;
+	}
+.ucenter_new div.button div
+{
+	margin:0px;
+	height:26px;
+	}
+.ucenter_new div.button .text
+{
+	background-color:#54C3F1;
+	width:70px;
+	background-image: url(  '../images/ucenter_new_button_01.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+.ucenter_new div.button .next
+{
+	background-color:#1B9ED4;
+	width:26px;
+	cursor:pointer;
+	background-image: url(  '../images/ucenter_new_button_02.png' );
+	background-position: center center;
+	background-repeat: no-repeat;
+	}
+.ucenter_new div.button .next:hover
+{
+	background-color:#54C3F1;
+
+	}
+/*--------------合作伙伴模块--------------------*/
+.firend 
+{
+	margin-top:70px;
+	}
+.firend .title
+{
+	background-image: url(  '../images/firend_bj.jpg' );
+	background-repeat:no-repeat;
+	background-position:left center;
+	height:5px;
+	}
+.firend .icon a
+{
+	float:left;
+	padding-top:0px;
+	margin:0px 18px 0px 18px;
+	}
+.firend .icon div.partner_icon
+{
+	float:left;
+	width:775px;
+	}
+.firend .icon div.holland
+{
+	float:right;
+	width:144px;
+	height:55px;
+	margin:0px 28px 0px 0px;
+	}
+.firend .icon div.holland a
+{
+	margin:0px 0px 0px 0px;
+	}
+/*--------------广告模版--------------------*/
+.app
+{
+	width:100%;
+	margin-top:18px;
+	overflow:hidden;
+	}
+.app div.app1
+{
+	cursor:pointer;
+	float:left;
+	height:147px;
+	width:225px;
+	background-color:#EBE9DF;
+	margin-right:16px;
+	margin-top:16px;
+}
+.app div.app2
+{
+	cursor:pointer;
+	float:left;
+	height:147px;
+	width:468px;
+	background-color:#EBE9DF;
+	margin-right:16px;
+	margin-top:16px;
+}
+.app div.app3
+{
+	cursor:pointer;
+	float:right;
+	height:147px;
+	width:707px;
+	background-color:#EBE9DF;
+	margin-right:16px;
+	margin-top:16px;
+}
+.app  div.apptopnone
+{
+	margin-top:0px;
+	}
+.app  div.apprightnone
+{
+	margin-right:0px;
+	}
+.app  div.f_right
+{
+	float:left;
+	}
+	
+/*---------------------新闻-----------------*/
+.news 
+{
+	margin-top:48px
+	}
+.news .left
+{
+	padding-left:124px;
+	width:607px;
+	}
+.news .left td.icon
+{
+	width:82px;
+	padding-bottom:10px;
+	}
+.news .left td.icon div
+{
+	width:100%;
+	background-color:#54c3f1;
+	color:White;
+	padding-top:5px;
+	padding-bottom:5px;
+	}
+.news .left td.title
+{
+	padding-bottom:10px;
+	}
+.news .left td.title div
+{
+	font-size:14px;
+	padding-left:22px;
+	color:White;
+	padding-top:5px;
+	background-image:url('../images/news_icon.jpg');
+	background-position:14px 12px;
+	background-repeat:no-repeat;
+	}
+.news .left td.title div a
+{
+	color:#7d7d7d;
+	}
+.news .left td.title div a:hover
+{
+	color:#ff6f00;
+	}
+.news .right
+{
+	background-image:url('../images/bj.jpg')
+	}
+.news_content 
+{
+	margin-top:25px
+	}
+.news_content .left
+{
+	padding-left:124px;
+	width:607px;
+	}
+.news_content .left div.content_title
+{
+	font-size:24px;
+	font-family:微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+	color:#858585;
+	overflow:hidden;
+	width:100%;
+	padding-top:33px;
+	padding-bottom:20px;
+	}
+.news_content .left .content
+{
+	font-size:16px;
+	line-height:1.5;
+	color:#333333;
+	overflow:hidden;
+	width:100%;
+	padding-bottom:40px;
+	}
+.news_content .left .date
+{
+	float:left;
+	width:108px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#54c3f1;
+	color:White;
+	}
+.news_content .left div.but
+{
+	float:right;
+	width:75px;
+	font-size:14px;
+	
+	padding-top:9px;
+	padding-bottom:9px;
+	background-color:#54c3f1;
+	margin-right:8px;
+	color:White;
+	cursor:pointer;
+	font-family:微软雅黑, Microsoft Yahei, Hiragino Sans GB, tahoma, arial, 宋体;
+	}
+.news_content .left div.but:hover
+{
+	background-color:#1b9ed4;
+	}
