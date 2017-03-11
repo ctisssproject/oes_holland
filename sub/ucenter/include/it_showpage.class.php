@@ -527,6 +527,128 @@ class ShowPage extends It_Basic {
 		';
 		return $s_html;
 	}
+	public function StudentWechat($n_page,$s_key) {
+		$this->S_FileName = 'student_wechat.php?key='.$s_key.'&';
+		$this->N_Page = $n_page;
+		$o_table = new User ();
+		if ($s_key != '') {
+			$o_table->PushWhere ( array ('&&', 'Name', 'LIKE', '%' . $s_key . '%' ) );
+			$o_table->PushWhere ( array ('&&', 'Checked', '=', 1 ) );
+			$o_table->PushWhere ( array ('&&', 'ComeFrom', '=', 'wechat' ) );
+			$o_table->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
+			$o_table->PushWhere ( array ('||', 'UserName', 'LIKE', '%' . $s_key . '%' ) );
+			$o_table->PushWhere ( array ('&&', 'Checked', '=', 1 ) );
+			$o_table->PushWhere ( array ('&&', 'ComeFrom', '=', 'wechat' ) );
+			$o_table->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
+			$o_table->PushWhere ( array ('||', 'Company', 'LIKE', '%' . $s_key . '%' ) );
+			$o_table->PushWhere ( array ('&&', 'Checked', '=', 1 ) );
+			$o_table->PushWhere ( array ('&&', 'ComeFrom', '=', 'wechat' ) );
+			$o_table->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
+		} else {
+			$o_table->PushWhere ( array ('&&', 'Checked', '=', 1 ) );
+			$o_table->PushWhere ( array ('&&', 'ComeFrom', '=', 'wechat' ) );
+			$o_table->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
+		}
+		$o_table->PushOrder ( array ('UserName', 'D' ) );
+		$o_table->setStartLine ( ($this->N_Page - 1) * $this->N_PageSize ); //起始记录
+		$o_table->setCountLine ( $this->N_PageSize );
+		$n_count = $o_table->getAllCount ();
+		if (($this->N_PageSize * ($this->N_Page - 1)) >= $n_count) {
+			$this->N_Page = ceil ( $n_count / $this->N_PageSize );
+			$n_yu = $n_count % $this->N_PageSize;
+			$o_table->setStartLine ( ($this->N_Page - 1) * $this->N_PageSize );
+			$o_table->setCountLine ( $this->N_PageSize );
+		}
+		$n_allcount = $o_table->getAllCount ();
+		$n_count = $o_table->getCount ();
+		$s_pagebutton = $this->getPageButtom ( $n_allcount, $this->N_PageSize, $this->N_Page );
+		//获取部门名称
+		for($i = 0; $i < $n_count; $i ++) { //按条数循环显示
+			$s_class = 'bright';
+			if (abs ( $i % 2 ) == 0) {
+				$s_class = 'dark';
+			}
+			if ($o_table->getIsSleep ( $i ) == 1) {
+				$s_img .= '<img src="images/list_sleep_icon.png" alt="睡眠户" align="absmiddle"/> ';
+			}
+			if ($o_table->getPercent ( $i ) >= 100) {
+				$s_img .= '<img src="images/list_expert_icon.png" alt="荷兰旅游专家" align="absmiddle"/> ';
+			}
+			$a_date = explode ( " ", $o_table->getRegTime ( $i ) );
+			$n_width = floor ( $o_table->getPercent ( $i ) * 60 / 100 );
+			$s_list .= '
+						<tr class="' . $s_class . '">
+								<td>
+                                    ' . $a_date [0] . '
+                                </td>
+                                <td>
+									<div style="border:1px solid #999999;;width:60px;height:16px;">										
+										<div style="background-color:#54C3F1; width:' . $n_width . 'px;height:16px;position:absolute">											
+										</div>	
+										<div style="position:absolute;width:60px;text-align:center;">' . $o_table->getPercent ( $i ) . '%</div>										
+									</div>                                    
+                                </td>
+                                <td>
+                                    ' . $s_img . $o_table->getName ( $i ) . '
+                                </td>
+                                <td>
+                                    ' . $o_table->getSex ( $i ) . '
+                                </td>
+                                <td>
+                                    ' . $o_table->getCompany ( $i ) . '
+                                </td>
+                                <td>
+                                    ' . $o_table->getJob ( $i ) . '
+                                </td>
+                                <td>
+                                    ' . $o_table->getPhone ( $i ) . '
+                                </td>
+                                <td>
+                                    ' . $o_table->getEmail1 ( $i ) . '
+                                </td>
+                            </tr>
+		';
+		}
+		$s_html = '
+			    <div class="title">
+                            <div>微信用户列表：共' . $n_allcount . '人</div>  
+                            <input class="subText" id="Vcl_Key" name="Vcl_Key" maxlength="200" value="" style="width: 200px;float:left" type="text" />
+                            <div class="subButton" style="float:left" onclick="searchSubmit(\'student_wechat.php?\')">搜索</div>            
+                            <div class="subButton" onclick="window.open(\'student_output.php?type=9&sleep=0\',\'_blank\')">信息导出</div>
+                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr class="item">
+                                <td style="width:80px;">
+                                    注册日期<img style="margin-left: 5px" src="images/sort_d.png" alt="" />
+                                </td>
+                                <td style="width:100px;">
+                                    专家完成度
+                                </td>
+                                <td style="width:60px;">
+                                    姓名
+                                </td>
+                                <td style="width:30px;">
+                                    性别
+                                </td>
+                                <td>
+                                    公司
+                                </td>
+                                <td>
+                                    职务
+                                </td>
+                                <td>
+                                    手机
+                                </td>
+                                <td>
+                                    邮箱
+                                </td>
+                            </tr>
+                            ' . $s_list . '                        
+                        </table>
+                        ' . $s_pagebutton . '
+		';
+		return $s_html;
+	}
 	public function StudentAll($n_page) {
 		$this->S_FileName = 'student_all.php?type=' . $_GET ['type'] . '&sleep=' . $_GET ['sleep'] . '&key=' . $_GET ['key'] . '&';
 		$this->N_Page = $n_page;

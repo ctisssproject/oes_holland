@@ -304,7 +304,7 @@ if ($n_section_id > 0) {
 							$o_study->PushWhere ( array ('&&', 'ChapterId', '=', $o_section->getChapterId () ) );
 							if ($o_study->getAllCount () > 0 || $o_user->getType()==5) {
 								//已通过
-								echo ('
+								/*echo ('
 								<div class="row answer_question">
 					                <h1>答题</h1>
 					                <div class="answer_left_triangle"></div>
@@ -315,7 +315,7 @@ if ($n_section_id > 0) {
 					                </div>
 					                <span class="icon-done"></span>
 					            </div>
-								');
+								');*/
 							} else {
 								//未通过
 								//检测本节下是否有题，如果没有题，那么自动变为已完成。
@@ -325,7 +325,7 @@ if ($n_section_id > 0) {
 								{
 									require_once 'include/bn_operate.class.php';
 									$o_operate = new Operate(); 
-									echo ('
+									/*echo ('
 										<div class="row answer_question">
 							                <h1>答题</h1>
 							                <div class="answer_left_triangle"></div>
@@ -336,7 +336,7 @@ if ($n_section_id > 0) {
 							                </div>
 							                <span class="icon-done"></span>
 							            </div>
-										');
+										');*/
 									//记录本节已被用户学习
 									//计算完成度
 									$o_user_chapter = new User_Study_Chapter (); //查找用户是否做过
@@ -443,7 +443,7 @@ if ($n_section_id > 0) {
 										';
 									}
 								}else{
-									echo ('
+									/*echo ('
 									<div class="row answer_question" onclick="startExam()">
 						                <h1>答题</h1>
 						                <div class="answer_left_triangle"></div>
@@ -455,12 +455,12 @@ if ($n_section_id > 0) {
 						                </div>
 						                <span class="icon-none"></span>
 						            </div>						            
-									');
+									');*/
 								}
 							}
 						} else {
 							//如果不是会员，显示答题，单点击后需要注册
-							echo ('
+							/*echo ('
 									<div class="row answer_question" onclick="location=\'register_1.php\'">
 						                <h1>答题</h1>
 						                <div class="answer_left_triangle"></div>
@@ -472,7 +472,7 @@ if ($n_section_id > 0) {
 						                <span class="icon-none"></span>
 						            </div>				            
 									
-								');
+								');*/
 						}
 					}
 				}

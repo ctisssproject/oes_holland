@@ -404,7 +404,7 @@ if ($n_section_id > 0) {
 										';
 									}
 								}else{
-									echo ('
+									/*echo ('
 									<div style="margin-top:50px;"></div>
 									<div class="exam_ok" id="success" style="display: none">
 										<div class="icon"></div>
@@ -428,12 +428,12 @@ if ($n_section_id > 0) {
 										<iframe marginwidth="0" border="0" scrolling="no" frameborder="0" src="" style="overflow: hidden; width: 640px; height: 500px">
 										</iframe>
 									</div>
-									');
+									');*/
 								}
 							}
 						} else {
 							//如果不是会员，显示答题，单点击后需要注册
-							echo ('
+							/*echo ('
 									<div style="margin-top:50px;"></div>
 									<div class="exam_no" id="start">
 										<div class="icon" title="开始答题" onclick="startExamGuest()">
@@ -449,7 +449,7 @@ if ($n_section_id > 0) {
 											可继续答题。
 										</div>
 									</div>
-								');
+								');*/
 						}
 					}
 				}

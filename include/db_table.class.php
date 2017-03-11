@@ -128,6 +128,7 @@ class Bank_Section extends CRUD {
 	protected $Rate;
 	protected $Time;
 	protected $State;
+	protected $Photo;
 	protected function DefineKey() {
 		return 'section_id';
 	}
@@ -144,6 +145,7 @@ class Bank_Section extends CRUD {
 						'vantage' => 'Vantage',
 						'subject_sum' => 'SubjectSum',
 						'rate' => 'Rate',
+		 				'photo' => 'Photo',
 		 				'state' => 'State',
 						'time' => 'Time'
 		));

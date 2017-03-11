@@ -76,6 +76,15 @@ if ($o_table->getType () < 2) {
 				</td>
 			</tr>	
 			<tr class="dark">
+				<td style="vertical-align: top"><span>节图片</span></td>
+				<td class="right_none"><input style="font-size: 12px;"
+					id="Vcl_Upload" name="Vcl_Upload" type="file" /> <span
+					class="red">*</span><br />
+				<span class="gray">推荐尺寸：宽度：562px * 296x</span><br />
+				<span class="gray">文件格式：jpg gif png bmp</span><br />
+				<span class="gray">文件大小：不能超过 1 MB</span></td>
+			</tr>
+			<tr class="bright">
 				<td><span>关键字</span></td>
 				<td class="right_none"><input id="Vcl_Key" name="Vcl_Key"
 					value="" style="width: 400px" type="text"/> 
@@ -109,32 +118,32 @@ if ($o_table->getType () < 2) {
 					
 					</td>
 			</tr>	
-			<tr class="bright">
+			<tr class="dark">
 				<td><span>单次考题数</span></td>
 				<td class="right_none"><input id="Vcl_SubjectSum" name="Vcl_SubjectSum"
 					value="" style="width: 50px" type="text" /> 题 <span class="red">*</span>
 					<span class="gray">每次答题时的考题数目</span>
 				</td>
 			</tr>
-			<tr class="dark">
+			<tr class="bright">
 				<td><span>正确率</span></td>
 				<td class="right_none"><input id="Vcl_Rate" name="Vcl_Rate"
 					value="100" style="width: 50px" type="text" /> % <span class="red">*</span>
 				</td>
 			</tr>
-			<tr class="bright">
+			<tr class="dark">
 				<td><span>考试时间</span></td>
 				<td class="right_none"><input id="Vcl_Time" name="Vcl_Time"
 					value="60" style="width: 50px" type="text" /> 分钟 <span class="red">*</span>
 				</td>
 			</tr>
-			<tr class="dark">
+			<tr class="bright">
 				<td><span>奖励积分</span></td>
 				<td class="right_none"><input id="Vcl_Vantage" name="Vcl_Vantage"
 					value="" style="width: 50px" type="text" /> 分 <span class="red">*</span>
 				</td>
 			</tr>		
-			<tr class="bright">
+			<tr class="dark">
 				<td style="vertical-align: top;"><span>节学习内容</span></td>
 				<td class="right_none"><script id="editor" type="text/plain"><p style="font-family:微软雅黑, simhei;font-size:14px;"></p></script>
 				</td>

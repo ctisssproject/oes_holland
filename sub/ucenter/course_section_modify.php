@@ -77,6 +77,21 @@ if ($o_table->getType () < 2) {
 				</td>
 			</tr>	
 			<tr class="dark">
+				<td style="vertical-align: top"><span>节图片</span></td>
+				<td class="right_none"><?php
+				echo('<img style="width:562px;height:296px" src="'.$o_table->getPhoto().'" alt="" />');
+				?>				
+				</td>
+			</tr>
+			<tr class="bright">
+				<td style="vertical-align: top"><span>修改图片</span></td>
+				<td class="right_none"><input style="font-size: 12px;"
+					id="Vcl_Upload" name="Vcl_Upload" type="file" /><br />
+				<span class="gray">推荐尺寸：宽度：562px * 296x</span><br />
+				<span class="gray">文件格式：jpg gif png bmp</span><br />
+				<span class="gray">文件大小：不能超过 1 MB</span></td>
+			</tr>
+			<tr class="dark">
 				<td><span>关键字</span></td>
 				<td class="right_none"><input id="Vcl_Key" name="Vcl_Key"
 					value="<?php echo($o_table->getSKey())?>" style="width: 400px" type="text"/> 

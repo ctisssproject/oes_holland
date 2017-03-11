@@ -1060,6 +1060,11 @@ class Operate extends Bn_Basic {
 		}
 		$a_ext = array ();
 		for($i = 1; $i < 4; $i ++) {
+			if ($_POST ['Vcl_TermId']==8 && $i!=3)
+			{
+				array_push ( $a_ext,'');
+				continue;
+			}
 			//验证文件是否存在
 			if ($_FILES ['Vcl_Upload' . $i] ['size'] == 0) {
 				$this->S_ErrorReasion = SysText::Index ( 'Error_006' );
@@ -1089,17 +1094,26 @@ class Operate extends Bn_Basic {
 		$o_table->setContent ( $_POST ['Vcl_Content'] );
 		$o_table->setNumber ( $_POST ['Vcl_Number'] );
 		$o_table->Save ();
-		
-		$o_table->setPhotoOn ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/on' . $a_ext [0] );
-		$o_table->setPhotoOff ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/off' . $a_ext [1] );
-		$o_table->setPhoto ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/photo' . $a_ext [2] );
+		if ($_POST ['Vcl_TermId']==8)
+		{
+			//微信版
+			$o_table->setPhoto ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/photo' . $a_ext [2] );
+		}else{
+			$o_table->setPhotoOn ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/on' . $a_ext [0] );
+			$o_table->setPhotoOff ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/off' . $a_ext [1] );
+			$o_table->setPhoto ( '/uploaddata/chapterphoto/' . $o_table->getChapterId () . '/photo' . $a_ext [2] );
+		}		
 		$o_table->Save ();
 		//读取图片
 		mkdir ( RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId (), 0700 );
-		
-		copy ( $_FILES ['Vcl_Upload1'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/on' . $a_ext [0] ); //将图片拷贝到指定
-		copy ( $_FILES ['Vcl_Upload2'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/off' . $a_ext [1] ); //将图片拷贝到指定
-		copy ( $_FILES ['Vcl_Upload3'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/photo' . $a_ext [2] ); //将图片拷贝到指定
+		if ($_POST ['Vcl_TermId']==8)
+		{
+			//微信版
+			copy ( $_FILES ['Vcl_Upload3'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/photo' . $a_ext [2] ); //将图片拷贝到指定
+		}else{
+			copy ( $_FILES ['Vcl_Upload1'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/on' . $a_ext [0] ); //将图片拷贝到指定
+			copy ( $_FILES ['Vcl_Upload2'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId () . '/off' . $a_ext [1] ); //将图片拷贝到指定
+		}
 		$this->CourseChapterSort ( $o_table->getChapterId (), $_POST ['Vcl_Number'], $o_table->getTermId () ); //排序
 		$this->S_ErrorReasion = SysText::Index ( 'Ok_019' );
 		return true;
@@ -1406,6 +1420,22 @@ class Operate extends Bn_Basic {
 		if (! ($n_type = 1)) {
 			return true;
 		}
+		//验证文件是否存在
+		if ($_FILES ['Vcl_Upload'] ['size'] == 0) {
+			$this->S_ErrorReasion = SysText::Index ( 'Error_006' );
+			return false;
+		}
+		//验证后缀名
+		$allowpictype = array ('jpg', 'jpeg', 'gif', 'png' );
+		$fileext = strtolower ( trim ( substr ( strrchr ( $_FILES ['Vcl_Upload'] ['name'], '.' ), 1 ) ) );
+		if (! in_array ( $fileext, $allowpictype )) {
+			$this->S_ErrorReasion = SysText::Index ( 'Error_007' );
+			return false;
+		}
+		if ($_FILES ['Vcl_Upload'] ['size'] > 1024 * 1024) {
+			$this->S_ErrorReasion = SysText::Index ( 'Error_008' );
+			return false;
+		}
 		$o_table = new Bank_Section ();
 		$o_table->setTitle ( $_POST ['Vcl_Title'] );
 		$o_table->setNumber ( $_POST ['Vcl_Number'] );
@@ -1436,6 +1466,11 @@ class Operate extends Bn_Basic {
 		}
 		$o_table->setSKey ( $s_key );
 		$o_table->Save ();
+		
+		$o_table->setPhoto ( '/uploaddata/sectionphoto/' . $o_table->getSectionId () . '/photo.' .$fileext);
+		$o_table->Save ();
+		mkdir ( RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $o_table->getSectionId (), 0700 );
+		copy ( $_FILES ['Vcl_Upload'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $o_table->getSectionId () . '/photo.' . $fileext ); //将图片拷贝到指定
 		$this->CourseSectionSort ( $o_table->getSectionId (), $_POST ['Vcl_Number'], $o_table->getChapterId () );
 		$this->S_ErrorReasion = SysText::Index ( 'Ok_020' );
 		return true;
@@ -1472,6 +1507,23 @@ class Operate extends Bn_Basic {
 			$s_key = $s_key . ';';
 		}
 		$o_table->setSKey ( $s_key );
+		
+		if ($_FILES ['Vcl_Upload'] ['size'] > 0) {
+			
+			//验证后缀名
+			$allowpictype = array ('jpg', 'jpeg', 'gif', 'png' );
+			$fileext = strtolower ( trim ( substr ( strrchr ( $_FILES ['Vcl_Upload'] ['name'], '.' ), 1 ) ) );
+			if (! in_array ( $fileext, $allowpictype )) {
+				$this->S_ErrorReasion = SysText::Index ( 'Error_007' );
+				return false;
+			}
+			if ($_FILES ['Vcl_Upload'] ['size'] > 1024 * 1024) {
+				$this->S_ErrorReasion = SysText::Index ( 'Error_008' );
+				return false;
+			}
+			$o_table->setPhoto ( '/uploaddata/sectionphoto/' . $_POST ['Vcl_SectionId'] . '/photo.' . $fileext );
+			copy ( $_FILES ['Vcl_Upload'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $_POST ['Vcl_SectionId'] . '/photo.' . $fileext ); //将图片拷贝到指定
+		}
 		$o_table->Save ();
 		$this->CourseSectionSort ( $o_table->getSectionId (), $_POST ['Vcl_Number'], $o_table->getChapterId () );
 		$this->S_ErrorReasion = SysText::Index ( 'Ok_009' );
@@ -1538,6 +1590,7 @@ class Operate extends Bn_Basic {
 		$o_to = new Bank_Section ();
 		$o_to->setNumber ( 1000 );
 		$o_to->setKey ( $o_from->getKey () );
+		$o_to->setPhoto ( $o_from->getPhoto () );
 		$o_to->setContent ( $o_from->getContent () );
 		$o_to->setTitle ( $o_from->getTitle () );
 		$o_to->setVantage ( $o_from->getVantage () );
@@ -1554,6 +1607,11 @@ class Operate extends Bn_Basic {
 		for($i = 0; $i < $n_count; $i ++) {
 			$this->CourseSubjectCopy ( $n_type, $o_subject->getSubjectId ( $i ), $o_to->getSectionId () );
 		}
+		//复制图片
+		$s_file = substr ( $o_from->getPhoto (), strlen ( $o_from->getPhoto () ) - 4, strlen ( $o_from->getPhoto () ) );
+		$o_to->setPhoto ( '/uploaddata/sectionphoto/' . $o_to->getSectionId () . '/photo' . $s_file );
+		mkdir ( RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $o_to->getSectionId (), 0700 );
+		copy ( RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $o_from->getSectionId () . '/photo' . $s_file, RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_to->getSectionId () . '/photo' . $s_file ); //将图片拷贝到指定
 		//新到这里要排序
 		$this->CourseSectionSortForDelete ( $n_toid );
 		return true;

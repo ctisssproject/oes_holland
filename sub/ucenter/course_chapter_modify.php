@@ -67,6 +67,10 @@ if ($o_table->getType () < 2) {
 					value="<?php echo($o_table->getName())?>" style="width: 400px" type="text" /> <span class="red">*</span>
 				<span class="gray">换行符号为: &lt;br/&gt;</span></td>
 			</tr>
+			<?php 
+			if ($o_table->getTermId()!=8)
+			{
+				?>
 			<tr class="dark">
 				<td style="vertical-align: top"><span>完成后图片</span></td>
 				<td class="right_none"><?php
@@ -99,6 +103,9 @@ if ($o_table->getType () < 2) {
 				<span class="gray">文件格式：jpg gif png bmp</span><br />
 				<span class="gray">文件大小：不能超过 1 MB</span></td>
 			</tr>
+				<?php
+			}
+			?>	
 			<tr class="dark">
 				<td style="vertical-align: top"><span>章图片</span></td>
 				<td class="right_none"><?php

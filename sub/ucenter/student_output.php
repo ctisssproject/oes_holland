@@ -59,6 +59,11 @@ function OutputList($n_type,$n_sleep) {
 		$o_user->PushWhere ( array ('&&', 'ComeFrom', '=', 'travel' ) );
 		$o_user->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
 		$o_user->PushOrder ( array ('RegTime', 'D' ) );
+	}elseif($n_type==9){
+		$n_comefrom='wechat';
+		$o_user->PushWhere ( array ('&&', 'ComeFrom', '=', 'wechat' ) );
+		$o_user->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
+		$o_user->PushOrder ( array ('RegTime', 'D' ) );
 	}else{
 		$n_comefrom='e-learning';
 		$o_user->PushWhere ( array ('&&', 'ComeFrom', '=', 'e-learning' ) );
@@ -91,7 +96,12 @@ function OutputList($n_type,$n_sleep) {
 		{
 			$s_type2='Yes';
 		}
-		SetTotalInfo ( $o_user->getRegTime ( $i ),$s_type1,$s_type2,$o_user->getCredentialName ( $i ),'', '', $o_user->getArea ( $i ), '', '', $n_comefrom, $o_user->getCompany ( $i ), $o_user->getEnCompany ( $i ), $o_user->getName ( $i ), $o_user->getEnName ( $i ), $o_user->getSex ( $i ), $o_user->getJob ( $i ), $o_user->getEnJob ( $i ), $o_user->getDept ( $i ), $o_user->getEnDept ( $i ), '\''.$o_user->getAreaNumber ( $i ), $o_user->getCompanyPhone ( $i ), $o_user->getTelephone ( $i ), $o_user->getExtension ( $i ), $o_user->getFax ( $i ), $o_user->getPhone ( $i ), $o_user->getPostcode ( $i ), $o_user->getProvince ( $i ), $o_user->getCity ( $i ), $o_user->getAddress ( $i ), $o_user->getEnAddress ( $i ), $o_user->getQQ ( $i ), $o_user->getUserName ( $i ), $o_user->getEmail2 ( $i ), $o_user->getUrl ( $i ), $o_user->getSkype ( $i ), $o_user->getBirthday ( $i ), '', '', $fp );
+		$s_email=$o_user->getUserName ( $i );
+		if ($n_type==9)
+		{
+			$s_email=$o_user->getEmail1 ( $i );
+		}
+		SetTotalInfo ( $o_user->getRegTime ( $i ),$s_type1,$s_type2,$o_user->getCredentialName ( $i ),'', '', $o_user->getArea ( $i ), '', '', $n_comefrom, $o_user->getCompany ( $i ), $o_user->getEnCompany ( $i ), $o_user->getName ( $i ), $o_user->getEnName ( $i ), $o_user->getSex ( $i ), $o_user->getJob ( $i ), $o_user->getEnJob ( $i ), $o_user->getDept ( $i ), $o_user->getEnDept ( $i ), '\''.$o_user->getAreaNumber ( $i ), $o_user->getCompanyPhone ( $i ), $o_user->getTelephone ( $i ), $o_user->getExtension ( $i ), $o_user->getFax ( $i ), $o_user->getPhone ( $i ), $o_user->getPostcode ( $i ), $o_user->getProvince ( $i ), $o_user->getCity ( $i ), $o_user->getAddress ( $i ), $o_user->getEnAddress ( $i ), $o_user->getQQ ( $i ),$s_email, $o_user->getEmail2 ( $i ), $o_user->getUrl ( $i ), $o_user->getSkype ( $i ), $o_user->getBirthday ( $i ), '', '', $fp );
 	}
 	fclose ( $fp );
 }

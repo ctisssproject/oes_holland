@@ -19,6 +19,12 @@ require_once 'include/it_head.inc.php';
 </table>
 <table border="0" cellpadding="0" cellspacing="0">
 	<tr>
+		<td class="nav" onclick="navGoTo('student_wechat.php?type=0&sleep=0',this)">微信用户
+		</td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
 		<td class="nav" onclick="navGoTo('student_all.php?type=0&sleep=0',this)">旅行社用户
 		</td>
 	</tr>

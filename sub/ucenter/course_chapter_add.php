@@ -72,6 +72,10 @@ if ($o_table->getType () < 2) {
 					value="" style="width: 400px" type="text" /> <span class="red">*</span>
 				<span class="gray">换行符号为: &lt;br/&gt;</span></td>
 			</tr>
+			<?php 
+			if ($_GET ['termid']!=8)
+			{
+				?>
 			<tr class="dark">
 				<td style="vertical-align: top"><span>完成后图片</span></td>
 				<td class="right_none"><input style="font-size: 12px;"
@@ -89,7 +93,10 @@ if ($o_table->getType () < 2) {
 				<span class="gray">推荐尺寸：宽度： 122px * 122x</span><br />
 				<span class="gray">文件格式：jpg gif png bmp</span><br />
 				<span class="gray">文件大小：不能超过 1 MB</span></td>
-			</tr>
+			</tr>	
+				<?php
+			}
+			?>			
 			<tr class="dark">
 				<td style="vertical-align: top"><span>章图片</span></td>
 				<td class="right_none"><input style="font-size: 12px;"
