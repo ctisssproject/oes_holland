@@ -1521,6 +1521,7 @@ class Operate extends Bn_Basic {
 				$this->S_ErrorReasion = SysText::Index ( 'Error_008' );
 				return false;
 			}
+			mkdir ( RELATIVITY_PATH . 'uploaddata/sectionphoto/' .$_POST ['Vcl_SectionId'], 0700 );
 			$o_table->setPhoto ( '/uploaddata/sectionphoto/' . $_POST ['Vcl_SectionId'] . '/photo.' . $fileext );
 			copy ( $_FILES ['Vcl_Upload'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/sectionphoto/' . $_POST ['Vcl_SectionId'] . '/photo.' . $fileext ); //将图片拷贝到指定
 		}

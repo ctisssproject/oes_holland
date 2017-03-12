@@ -87,7 +87,7 @@ if ($o_table->getType () < 2) {
 				<td style="vertical-align: top"><span>修改图片</span></td>
 				<td class="right_none"><input style="font-size: 12px;"
 					id="Vcl_Upload" name="Vcl_Upload" type="file" /><br />
-				<span class="gray">推荐尺寸：宽度：562px * 296x</span><br />
+				<span class="gray">推荐尺寸：宽与高的比例为2:1，宽在700像素至800像素之间</span><br />
 				<span class="gray">文件格式：jpg gif png bmp</span><br />
 				<span class="gray">文件大小：不能超过 1 MB</span></td>
 			</tr>
