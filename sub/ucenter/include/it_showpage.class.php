@@ -564,6 +564,7 @@ class ShowPage extends It_Basic {
 		$s_pagebutton = $this->getPageButtom ( $n_allcount, $this->N_PageSize, $this->N_Page );
 		//获取部门名称
 		for($i = 0; $i < $n_count; $i ++) { //按条数循环显示
+			$s_img='';
 			$s_class = 'bright';
 			if (abs ( $i % 2 ) == 0) {
 				$s_class = 'dark';
