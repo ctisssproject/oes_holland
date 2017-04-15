@@ -81,15 +81,12 @@
         //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
         ,toolbars:[
             ['fullscreen', 'source', '|', 'undo', 'redo', '|',
-                'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch','autotypeset','blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist','selectall', 'cleardoc', '|',
-                'rowspacingtop', 'rowspacingbottom','lineheight','|',
-                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                'bold', 'italic', 'underline', 'strikethrough', 'removeformat', 'formatmatch','pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist','|',
                 'directionalityltr', 'directionalityrtl', 'indent', '|',
                 'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|','touppercase','tolowercase','|',
-                'link', 'unlink', '|', 'imagenone', 'imageleft', 'imageright','imagecenter', '|',
+                'link', 'unlink', '|',
                 'emotion','|','insertimage', 'insertvideo','attachment','map','|','background',
                 'horizontal', 'date', 'time', 'spechars','|',
-                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', '|',
                 'print', 'preview', 'searchreplace']
         ]
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
