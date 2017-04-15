@@ -80,7 +80,7 @@ class Bn_Basic {
 		$s_html = str_replace ( "<TITLE/>", $s_title, $s_html ); //替换标题	
 		//发送邮件
 		if ($this->N_EdmUid > 0) {
-			$this->JmailSendEmail ( $o_user->getUserName (), $this->S_EdmTitle, $s_html,$this->S_FromEmail );
+			$this->JmailSendEmail ( $o_user->getEmail1 (), $this->S_EdmTitle, $s_html,$this->S_FromEmail );
 		} else {
 			$this->JmailSendEmail ( $this->S_EdmEmail, $this->S_EdmTitle, $s_html,$this->S_FromEmail);
 		}
@@ -316,10 +316,10 @@ class Bn_Basic {
 		$this->S_EdmContent = '';
 		$this->setEdmUser ( $n_uid );
 		$this->setEdmFromMail('service@hollandtravelexpert.com');
-		$this->setEdmTitle ( '快快完成“荷兰旅游专家”在线培训课程，赢取丰厚荷兰礼品！' );
+		$this->setEdmTitle ( '快快完成“荷兰旅游专家”微信版在线培训课程，赢取丰厚荷兰礼品！' );
 		$this->setEdmContent ( ':<br/>
 							您好！<br/><br/>
-							您已经有' . $o_system->getIsSleep () . '天没有进行“荷兰旅游专家”在线培训课程的学习了，目前还有 ' . (100 - $n_percent) . '% 的章节没有完成。马上点击下面链接，继续学习吧。<br/><br/>
+							您已经有' . $o_system->getIsSleep () . '天没有进行“荷兰旅游专家”微信版在线培训课程的学习了，目前还有 ' . (100 - $n_percent) . '% 的章节没有完成。马上点击下面链接，继续学习吧。<br/><br/>
 							目前已有' . $n_user . '位学员完成学习并获得了“荷兰旅游专家”证书，快快迎头赶上吧！<br/><br/>
 							<a style="color:#FF7000" href="' . $o_system->getHost () . '" target="_blank">' . $o_system->getHost () . '</a><br/>
 							如果无法点击，请复制链接至浏览器的地址栏进行查看。<br/><br/>
