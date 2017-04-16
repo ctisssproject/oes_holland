@@ -80,7 +80,7 @@ class Bn_Basic {
 		$s_html = str_replace ( "<TITLE/>", $s_title, $s_html ); //替换标题	
 		//发送邮件
 		if ($this->N_EdmUid > 0) {
-			$this->JmailSendEmail ( $o_user->getEmail1 (), $this->S_EdmTitle, $s_html,$this->S_FromEmail );
+			$this->JmailSendEmail ( $o_user->getUserName (), $this->S_EdmTitle, $s_html,$this->S_FromEmail );
 		} else {
 			$this->JmailSendEmail ( $this->S_EdmEmail, $this->S_EdmTitle, $s_html,$this->S_FromEmail);
 		}

@@ -2413,7 +2413,7 @@ class Operate extends Bn_Basic {
 			$o_user_temp->Save ();
 			if ($b_send == 1) {
 				//发送邮件提醒到用户邮箱 
-				$this->SendEmailRemSleep ( $o_user->getUid ( $i ), $o_system, $o_user_temp->getPercent (), $n_user );
+				//$this->SendEmailRemSleep ( $o_user->getUid ( $i ), $o_system, $o_user_temp->getPercent (), $n_user );
 			}
 		}
 		//清楚未验证的用户
