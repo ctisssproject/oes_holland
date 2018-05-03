@@ -9,7 +9,7 @@ require_once 'include/it_include.inc.php';
 </head>
 <body style="margin:0px;">
 <?php 
-require_once RELATIVITY_PATH . 'include/db_table.class.php';
+require_once RELATIVITY_PATH . 'include/db_table.class.php ';
 $o_mailrecord=new MailRecord($_GET ['id']);
 echo($o_mailrecord->getContent())?>
 </body>

@@ -68,6 +68,21 @@ if ($o_table->getSectionId () >= 1) {
 				</td>
 			</tr>
 			<tr class="dark">
+				<td style="vertical-align: top"><span>配图</span></td>
+				<td class="right_none"><?php
+				echo('<img style="width:122px;height:122px" src="'.$o_table->getPhoto().'" alt="" />');
+				?>				
+				</td>
+			</tr>
+			<tr class="bright">
+				<td style="vertical-align: top"><span>修改配图</span></td>
+				<td class="right_none"><input style="font-size: 12px;"
+					id="Vcl_Upload" name="Vcl_Upload" type="file" /><br />
+				<span class="gray">推荐尺寸：宽度：640px</span><br />
+				<span class="gray">文件格式：jpg gif png bmp</span><br />
+				<span class="gray">文件大小：不能超过 1 MB</span></td>
+			</tr>
+			<tr class="dark">
 				<td style="width: 100px; vertical-align: top"><span>选项</span></td>
 				<td class="right_none">
 				<?php

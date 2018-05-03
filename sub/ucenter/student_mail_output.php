@@ -12,7 +12,7 @@ if ($O_Session->getType () != 1) //如果不是系统管理员
 	echo ('非法操作');
 	exit ( 0 );
 }
-require_once RELATIVITY_PATH . 'include/db_table.class.php';
+require_once RELATIVITY_PATH . 'include/db_table.class.php ';
 $S_Filename = '收件人列表.csv';
 $o_mailrecord=new MailRecord($_GET ['id']);
 $file_name = $o_mailrecord->getCsv();

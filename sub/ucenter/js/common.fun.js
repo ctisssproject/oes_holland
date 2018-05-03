@@ -17,7 +17,7 @@ function resizeLeave1()
     try{
         var sl = parent.document.getElementsByTagName("iframe")[0].contentWindow.document.body.scrollHeight
         var obj=parent.document.getElementsByTagName("iframe")[0]
-        $(obj).height(sl+10) 
+        $(obj).height(sl+10)  
     } catch(e)
     {
     window.alert(e)

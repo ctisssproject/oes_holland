@@ -1,5 +1,4 @@
 <?php
-error_reporting(0);
 define ( 'RELATIVITY_PATH', '../../' ); //定义相对路径
 header ( 'Cache-Control: no-cache' );
 header ( 'Pragma: no-cache' );

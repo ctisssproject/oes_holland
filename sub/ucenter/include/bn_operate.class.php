@@ -1621,9 +1621,27 @@ class Operate extends Bn_Basic {
 		if (! ($n_type = 1)) {
 			return true;
 		}
+		$allowpictype = array ('jpg', 'jpeg', 'gif', 'png' );
+		$fileext = strtolower ( trim ( substr ( strrchr ( $_FILES ['Vcl_Upload'] ['name'], '.' ), 1 ) ) );
+		if (! in_array ( $fileext, $allowpictype )) {
+			$this->S_ErrorReasion = SysText::Index ( 'Error_007' );
+			return false;
+		}
+		if ($_FILES ['Vcl_Upload'] ['size'] > 1024 * 1024) {
+			$this->S_ErrorReasion = SysText::Index ( 'Error_008' );
+			return false;
+		}
 		$o_table = new Bank_Subject ();
 		$o_table->setContent ( $_POST ['Vcl_Content'] );
 		$o_table->setSectionId ( $_POST ['Vcl_SectionId'] );
+		$o_table->Save ();
+		mkdir ( RELATIVITY_PATH . 'uploaddata/subjectphoto', 0700 );
+		mkdir ( RELATIVITY_PATH . 'uploaddata/subjectphoto/' . $o_table->getSubjectId (), 0700 );
+		$o_table->setPhoto ( '/uploaddata/subjectphoto/' . $o_table->getSubjectId () . '/photo.' . $fileext );
+		$o_table->Save ();
+		//读取图片
+		mkdir ( RELATIVITY_PATH . 'uploaddata/chapterphoto/' . $o_table->getChapterId (), 0700 );
+		copy ( $_FILES ['Vcl_Upload'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/subjectphoto/' . $o_table->getSubjectId () . '/photo.' .$fileext); //将图片拷贝到指定
 		$o_table->Save ();
 		$s_right_id = '';
 		$s_right = '';
@@ -1658,6 +1676,20 @@ class Operate extends Bn_Basic {
 		}
 		$o_table = new Bank_Subject ( $_POST ['Vcl_SubjectId'] );
 		$o_table->setContent ( $_POST ['Vcl_Content'] );
+		if($_FILES ['Vcl_Upload'] ['size']>0)
+		{
+			$allowpictype = array ('jpg', 'jpeg', 'gif', 'png' );
+			$fileext = strtolower ( trim ( substr ( strrchr ( $_FILES ['Vcl_Upload'] ['name'], '.' ), 1 ) ) );
+			if (! in_array ( $fileext, $allowpictype )) {
+				$this->S_ErrorReasion = SysText::Index ( 'Error_007' );
+				return false;
+			}
+			if ($_FILES ['Vcl_Upload'] ['size'] > 1024 * 1024) {
+				$this->S_ErrorReasion = SysText::Index ( 'Error_008' );
+				return false;
+			}
+			copy ( $_FILES ['Vcl_Upload'] ['tmp_name'], RELATIVITY_PATH . 'uploaddata/subjectphoto/' . $o_table->getSubjectId () . '/photo.' .$fileext); //将图片拷贝到指定
+		}	
 		$s_right_id = '';
 		$s_right = '';
 		//删除所有选项

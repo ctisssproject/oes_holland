@@ -1,8 +1,8 @@
 <?php
 define ( 'RELATIVITY_PATH', '../../' ); //定义相对路径
 require_once RELATIVITY_PATH . 'include/bn_session.class.php';
-require_once RELATIVITY_PATH . 'include/db_table.class.php';
-require_once RELATIVITY_PATH . 'include/db_view.class.php';
+require_once RELATIVITY_PATH . 'include/db_table.class.php ';
+require_once RELATIVITY_PATH . 'include/db_view.class.php ';
 $S_Filename = '寄送荷兰宣传资料列表.csv';
 OutputList ();
 

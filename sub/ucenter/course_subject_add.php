@@ -56,8 +56,16 @@ if ($o_table->getType () < 2) {
 				<input class="checkbox" name="Vcl_Right_E" id="Vcl_Right_E" type="checkbox"/>&nbsp;E&nbsp;&nbsp;
 				<input class="checkbox" name="Vcl_Right_F" id="Vcl_Right_F" type="checkbox"/>&nbsp;F&nbsp;&nbsp;
 				</td>
-			</tr>	
+			</tr>
 			<tr class="dark">
+				<td style="vertical-align: top"><span>配图（选填）</span></td>
+				<td class="right_none"><input style="font-size: 12px;"
+					id="Vcl_Upload" name="Vcl_Upload" type="file" /><br />
+				<span class="gray">推荐尺寸：宽度：640px</span><br />
+				<span class="gray">文件格式：jpg gif png bmp</span><br />
+				<span class="gray">文件大小：不能超过 1 MB</span></td>
+			</tr>	
+			<tr class="bright">
 				<td style="width: 100px;vertical-align: top"><span>选项</span></td>
 				<td class="right_none"><div>A：<input id="Vcl_Option_A" name="Vcl_Option_A" value="" maxlength="255" style="width:600px" type="text" /></div>
 				<div style="margin-top:10px">B：<input id="Vcl_Option_B" name="Vcl_Option_B" value="" maxlength="255" style="width:600px" type="text" /></div>

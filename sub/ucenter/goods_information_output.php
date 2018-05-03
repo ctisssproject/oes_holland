@@ -12,8 +12,8 @@ if ($O_Session->getType () != 1) //如果不是系统管理员
 	echo ('非法操作');
 	exit ( 0 );
 }
-require_once RELATIVITY_PATH . 'include/db_table.class.php';
-require_once RELATIVITY_PATH . 'include/db_view.class.php';
+require_once RELATIVITY_PATH . 'include/db_table.class.php ';
+require_once RELATIVITY_PATH . 'include/db_view.class.php ';
 $S_Filename = '寄送荷兰宣传资料列表.csv';
 OutputList ();
 
@@ -38,7 +38,7 @@ function OutputList() {
 	SetTotalInfo ( '发货日期','姓名','地址', '电话', '邮箱', '物品名称', $fp );
 	$o_send = new View_Goods_Information ();
 	$o_send->PushWhere ( array ('&&', 'Type', '=', 3 ) );
-	$o_send->PushWhere ( array ('&&', 'State', '=', 3 ) );
+	$o_send->PushWhere ( array ('&&', 'State', '=', 2 ) );
 	$o_send->PushOrder ( array ('Uid', 'D' ) );
 	$o_send->PushOrder ( array ('Date', 'A' ) );
 	$n_count=$o_send->getAllCount();

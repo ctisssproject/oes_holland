@@ -9,7 +9,6 @@
  * @param {String}     cmdName    执行的功能名称
  * @param {String}    value             传入的值
  */
-
 UE.plugins['font'] = function() {
     var me = this,
         fonts = {
@@ -180,5 +179,6 @@ UE.plugins['font'] = function() {
             };
         })( p, fonts[p] );
     }
-    
-}; 
+
+
+};

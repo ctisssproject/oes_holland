@@ -158,6 +158,7 @@ class Bank_Subject  extends CRUD {
 	protected $RightOptionId;
 	protected $RightOption;
 	protected $SectionId;
+	protected $Photo;
 	protected function DefineKey() {
 		return 'subject_id';
 	}
@@ -168,6 +169,7 @@ class Bank_Subject  extends CRUD {
 		 return (array ('subject_id' => 'SubjectId', 
 						'content' => 'Content', 
 		 				'section_id' => 'SectionId',
+		 				'photo' => 'Photo',
 		 				'right_option' => 'RightOption',
 						'right_option_id' => 'RightOptionId'
 		));
