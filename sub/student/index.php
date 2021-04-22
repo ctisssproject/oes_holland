@@ -109,21 +109,21 @@ $n_chapter_single_count = $o_chapter_single->getAllCount ();
 				//读取当前用户数
 				$o_user_count = new User ();
 				$o_user_count->PushWhere ( array ('&&', 'Type', '>=', 3 ) );
-				echo ($o_user_count->getAllCount ());
+				//echo ($o_user_count->getAllCount ());
 				?> 人<br />
 				<span>专家称号：</span><br />
 				<?php
 				//读取专家称号人数
 				$o_user_count = new User ();
 				$o_user_count->PushWhere ( array ('&&', 'Type', '>=', 4 ) );
-				echo ($o_user_count->getAllCount ());
+				//echo ($o_user_count->getAllCount ());
 				?> 人<br />
 				<span>我的排名：</span><br />第&nbsp;<?php
 				//如果我是专家，就排名第一位，如果不是排名专家数加一 
 				if ($o_user->getType () >= 4) {
 					echo (1);
 				} else {
-					echo ($o_user_count->getAllCount () + 1);
+					//echo ($o_user_count->getAllCount () + 1);
 				}
 				?>&nbsp;位</div>
 				<div style="display:none" class="down"

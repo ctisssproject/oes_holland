@@ -2,10 +2,10 @@
 require_once RELATIVITY_PATH . 'include/it_systext.class.php';
 abstract class DB_Connect
 {
-   private $S_DatabaseServer = '127.0.0.1:3306';
-   private $S_UserName = 'root';
-   private $S_PassWord = 'chutaoIsss';
-   private $S_DataBaseName = 'oes_holland';
+	private $S_DatabaseServer = 'hdm-003.hichina.com';
+	private $S_UserName = 'hdm0030472';
+	private $S_PassWord = 'q1w2e3r4';
+	private $S_DataBaseName = 'hdm0030472_db';
    protected $O_Result;
    protected $S_Id;
    protected $S_Error_Reason;
